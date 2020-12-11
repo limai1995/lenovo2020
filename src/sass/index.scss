@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+// 第一栏
+#top {
+    width: 100%;
+    background-color: blue;
+    .top_img1 {
+        img {
+            width: 50px;
+            height: 48px;
+            // display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .top_one {
+        width: 1200px;
+        height: 48px;
+        position: relative;
+        margin: 0 auto;
+        background-color: orange;
+    }
+    // 导航
+    .top_ul {
+        // width: 1200px;
+        height: 48px;
+        .topul_li {
+            height: 48px;
+            margin-right: 22px;
+            font-size: 15px;
+            float: left;
+            list-style: none;
+            line-height: 48px;
+        }
+    }
+    .top_zd {
+        width: 110px;
+        // float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        .topzd_ul {
+            width: 60px;
+            float: left;
+            background-color: saddlebrown;
+        }
+        .topzd_ul_li {
+            width: 30px;
+            height: 48px;
+            text-align: center;
+            float: left;
+            font-size: 12px;
+            list-style: none;
+            // margin: 0 3px;
+            text-align: center;
+            color: orchid;
+            line-height: 48px;
+        }
+        img {
+            width: 23px;
+            height: 23px;
+            text-align: center;
+            position: absolute;
+            top: 17px;
+            right: 17px;
+        }
+    }
+}
+
+// 第二栏
+#top_secendlie {
+    width: 100%;
+    height: 72px;
+    background-color: #cccccc;
+    .top_lie {
+        width: 1200px;
+        margin: 0 auto;
+        // position: relative;
+        background-color: saddlebrown;
+        .top_lie_ul {
+            width: 824px;
+            height: 48px;
+            // float: left;
+            background-color: salmon;
+            .toplie_ul_li {
+                height: 72px;
+                float: left;
+                font-size: 17px;
+                list-style: none;
+                margin-right: 45px;
+                line-height: 72px;
+            }
+        }
+    }
+    .top_sou {
+        .top_sousuo {
+            width: 270px;
+            height: 40px;
+            float: right;
+            background-color: seagreen;
+            // position: absolute;
+            // top: 0;
+            // right: 0;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#top {
+  width: 100%;
+  background-color: blue;
+}
+#top .top_img1 img {
+  width: 50px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#top .top_one {
+  width: 1200px;
+  height: 48px;
+  position: relative;
+  margin: 0 auto;
+  background-color: orange;
+}
+#top .top_ul {
+  height: 48px;
+}
+#top .top_ul .topul_li {
+  height: 48px;
+  margin-right: 22px;
+  font-size: 15px;
+  float: left;
+  list-style: none;
+  line-height: 48px;
+}
+#top .top_zd {
+  width: 110px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#top .top_zd .topzd_ul {
+  width: 60px;
+  float: left;
+  background-color: saddlebrown;
+}
+#top .top_zd .topzd_ul_li {
+  width: 30px;
+  height: 48px;
+  text-align: center;
+  float: left;
+  font-size: 12px;
+  list-style: none;
+  text-align: center;
+  color: orchid;
+  line-height: 48px;
+}
+#top .top_zd img {
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+}
+
+#top_secendlie {
+  width: 100%;
+  height: 72px;
+  background-color: #cccccc;
+}
+#top_secendlie .top_lie {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: saddlebrown;
+}
+#top_secendlie .top_lie .top_lie_ul {
+  width: 824px;
+  height: 48px;
+  background-color: salmon;
+}
+#top_secendlie .top_lie .top_lie_ul .toplie_ul_li {
+  height: 72px;
+  float: left;
+  font-size: 17px;
+  list-style: none;
+  margin-right: 45px;
+  line-height: 72px;
+}
+#top_secendlie .top_sou .top_sousuo {
+  width: 270px;
+  height: 40px;
+  float: right;
+  background-color: seagreen;
+}
+
+/*# sourceMappingURL=index.css.map */
