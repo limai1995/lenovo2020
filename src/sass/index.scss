@@ -20,13 +20,13 @@
     .top_one {
         width: 1200px;
         height: 48px;
-        position: relative;
         margin: 0 auto;
+        position: relative;
         background-color: orange;
     }
     // 导航
     .top_ul {
-        // width: 1200px;
+        width: 824px;
         height: 48px;
         .topul_li {
             height: 48px;
@@ -51,12 +51,12 @@
         .topzd_ul_li {
             width: 30px;
             height: 48px;
-            text-align: center;
+            // text-align: center;
             float: left;
             font-size: 12px;
             list-style: none;
             // margin: 0 3px;
-            text-align: center;
+            // text-align: center;
             color: orchid;
             line-height: 48px;
         }
@@ -64,9 +64,11 @@
             width: 23px;
             height: 23px;
             text-align: center;
-            position: absolute;
-            top: 17px;
-            right: 17px;
+            margin-top: 8px;
+            margin-right: 8px;
+            // position: absolute;
+            // top: 8px;
+            // right: 8px;
         }
     }
 }
@@ -79,11 +81,12 @@
     .top_lie {
         width: 1200px;
         margin: 0 auto;
-        // position: relative;
+        position: relative;
         background-color: saddlebrown;
         .top_lie_ul {
             width: 824px;
             height: 48px;
+            // float: left;
             // float: left;
             background-color: salmon;
             .toplie_ul_li {
@@ -96,15 +99,186 @@
             }
         }
     }
-    .top_sou {
-        .top_sousuo {
-            width: 270px;
-            height: 40px;
+    // 搜索框
+    .top_sousuo {
+        margin-top: 20px;
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        form {
+            outline: none;
+        }
+        input {
+            width: 240px;
+            height: 30px;
+            background-color: antiquewhite;
+            border-radius: 15px;
+            border: 1px solid black;
+            outline: none;
+        }
+    }
+}
+
+// 轮播图
+#lunlie {
+    width: 100%;
+    // height: 470px;
+    position: relative;
+    .lunbo {
+        width: 100%;
+        height: 470px;
+        position: relative;
+        background-color: brown;
+        .luntu {
+            width: 100%;
+            .luntu_li {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                img {
+                    width: 1520px;
+                    height: 470px;
+                }
+            }
+        }
+        // 小圆圈
+        .lunquan {
+            width: 100%;
+            height: 15px;
+            background-color: aqua;
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+        }
+        .lunquanol {
+            width: 300px;
+            height: 15px;
+            margin: 0 auto;
+            background-color: chartreuse;
+        }
+    }
+    .lun_olli {
+        width: 12px;
+        height: 12px;
+        float: left;
+        margin: 0 auto;
+        border-radius: 50%;
+        margin-right: 35px;
+        background: #cccccc;
+        list-style: none;
+        // text-indent: -99999;
+    }
+    .active {
+        background: blue;
+        ;
+    } // 左右箭头
+    #left,
+    #right {
+        position: absolute;
+        top: 50%;
+        margin-top: -60px;
+        font-size: 100px;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    #left {
+        left: 10px;
+    }
+    #right {
+        right: 10px;
+    }
+    // 三级法魔阵
+    .sanlie {
+        width: 1200px;
+        height: 480px;
+        position: absolute;
+        top: 0;
+        left: 160px;
+        // margin: 0 auto;
+        // background-color: chartreuse;
+        z-index: 1;
+        overflow: hidden;
+        // 一级魔法
+        .yiji {
+            width: 280px;
+            height: 400px;
+            list-style: none;
+            background: rgba(255, 255, 255, 0.8);
+            margin-top: 40px;
+            .yifa {
+                width: 214px;
+                height: 55px;
+                padding: 0 32px;
+                color: #4b4b4b;
+                cursor: pointer;
+                border: 1px solid #e6e6e6;
+                line-height: 55px;
+                font-weight: bold;
+            }
+        }
+        span {
             float: right;
-            background-color: seagreen;
-            // position: absolute;
-            // top: 0;
-            // right: 0;
+        }
+        .yifa:hover {
+            background-color: seashell;
+        }
+        .yifa:hover .erji {
+            display: block;
+        }
+        // 二级魔法
+        .erji {
+            width: 960px;
+            height: 378px;
+            position: absolute;
+            top: 40px;
+            left: 280px;
+            padding: 15px;
+            font-size: 12px;
+            color: block;
+            background: white;
+            display: none;
+        }
+        .erji>ul {
+            width: 600px;
+            height: 20px;
+            line-height: 20px;
+            margin: 20px 0;
+            list-style: none;
+            >li {
+                padding: 0 10px;
+                cursor: pointer;
+                float: left;
+                border-right: 1px solid #dddddd;
+                >span {
+                    font-size: 14px;
+                }
+            }
+            >li:hover {
+                color: red;
+            }
+            >li:last-of-type {
+                border-right: 0px;
+            }
+        }
+        .erji>div {
+            width: 240px;
+            height: 130px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .erji .yizhang {
+            position: absolute;
+            top: 20px;
+            right: 86px;
+        }
+        .erji .erzhang {
+            position: absolute;
+            top: 160px;
+            right: 86px;
         }
     }
 }

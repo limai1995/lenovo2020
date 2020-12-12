@@ -17,11 +17,12 @@
 #top .top_one {
   width: 1200px;
   height: 48px;
-  position: relative;
   margin: 0 auto;
+  position: relative;
   background-color: orange;
 }
 #top .top_ul {
+  width: 824px;
   height: 48px;
 }
 #top .top_ul .topul_li {
@@ -46,11 +47,9 @@
 #top .top_zd .topzd_ul_li {
   width: 30px;
   height: 48px;
-  text-align: center;
   float: left;
   font-size: 12px;
   list-style: none;
-  text-align: center;
   color: orchid;
   line-height: 48px;
 }
@@ -58,9 +57,8 @@
   width: 23px;
   height: 23px;
   text-align: center;
-  position: absolute;
-  top: 17px;
-  right: 17px;
+  margin-top: 8px;
+  margin-right: 8px;
 }
 
 #top_secendlie {
@@ -71,6 +69,7 @@
 #top_secendlie .top_lie {
   width: 1200px;
   margin: 0 auto;
+  position: relative;
   background-color: saddlebrown;
 }
 #top_secendlie .top_lie .top_lie_ul {
@@ -86,11 +85,176 @@
   margin-right: 45px;
   line-height: 72px;
 }
-#top_secendlie .top_sou .top_sousuo {
-  width: 270px;
-  height: 40px;
+#top_secendlie .top_sousuo {
+  margin-top: 20px;
   float: right;
-  background-color: seagreen;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#top_secendlie .top_sousuo form {
+  outline: none;
+}
+#top_secendlie .top_sousuo input {
+  width: 240px;
+  height: 30px;
+  background-color: antiquewhite;
+  border-radius: 15px;
+  border: 1px solid black;
+  outline: none;
+}
+
+#lunlie {
+  width: 100%;
+  position: relative;
+}
+#lunlie .lunbo {
+  width: 100%;
+  height: 470px;
+  position: relative;
+  background-color: brown;
+}
+#lunlie .lunbo .luntu {
+  width: 100%;
+}
+#lunlie .lunbo .luntu .luntu_li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+#lunlie .lunbo .luntu .luntu_li img {
+  width: 1520px;
+  height: 470px;
+}
+#lunlie .lunbo .lunquan {
+  width: 100%;
+  height: 15px;
+  background-color: aqua;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+}
+#lunlie .lunbo .lunquanol {
+  width: 300px;
+  height: 15px;
+  margin: 0 auto;
+  background-color: chartreuse;
+}
+#lunlie .lun_olli {
+  width: 12px;
+  height: 12px;
+  float: left;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-right: 35px;
+  background: #cccccc;
+  list-style: none;
+}
+#lunlie .active {
+  background: blue;
+}
+#lunlie #left,
+#lunlie #right {
+  position: absolute;
+  top: 50%;
+  margin-top: -60px;
+  font-size: 100px;
+  text-decoration: none;
+  color: #ffffff;
+}
+#lunlie #left {
+  left: 10px;
+}
+#lunlie #right {
+  right: 10px;
+}
+#lunlie .sanlie {
+  width: 1200px;
+  height: 480px;
+  position: absolute;
+  top: 0;
+  left: 160px;
+  z-index: 1;
+  overflow: hidden;
+}
+#lunlie .sanlie .yiji {
+  width: 280px;
+  height: 400px;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 40px;
+}
+#lunlie .sanlie .yiji .yifa {
+  width: 214px;
+  height: 55px;
+  padding: 0 32px;
+  color: #4b4b4b;
+  cursor: pointer;
+  border: 1px solid #e6e6e6;
+  line-height: 55px;
+  font-weight: bold;
+}
+#lunlie .sanlie span {
+  float: right;
+}
+#lunlie .sanlie .yifa:hover {
+  background-color: seashell;
+}
+#lunlie .sanlie .yifa:hover .erji {
+  display: block;
+}
+#lunlie .sanlie .erji {
+  width: 960px;
+  height: 378px;
+  position: absolute;
+  top: 40px;
+  left: 280px;
+  padding: 15px;
+  font-size: 12px;
+  color: block;
+  background: white;
+  display: none;
+}
+#lunlie .sanlie .erji > ul {
+  width: 600px;
+  height: 20px;
+  line-height: 20px;
+  margin: 20px 0;
+  list-style: none;
+}
+#lunlie .sanlie .erji > ul > li {
+  padding: 0 10px;
+  cursor: pointer;
+  float: left;
+  border-right: 1px solid #dddddd;
+}
+#lunlie .sanlie .erji > ul > li > span {
+  font-size: 14px;
+}
+#lunlie .sanlie .erji > ul > li:hover {
+  color: red;
+}
+#lunlie .sanlie .erji > ul > li:last-of-type {
+  border-right: 0px;
+}
+#lunlie .sanlie .erji > div {
+  width: 240px;
+  height: 130px;
+}
+#lunlie .sanlie .erji > div img {
+  width: 100%;
+  height: 100%;
+}
+#lunlie .sanlie .erji .yizhang {
+  position: absolute;
+  top: 20px;
+  right: 86px;
+}
+#lunlie .sanlie .erji .erzhang {
+  position: absolute;
+  top: 160px;
+  right: 86px;
 }
 
 /*# sourceMappingURL=index.css.map */
