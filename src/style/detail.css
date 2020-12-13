@@ -1,0 +1,558 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#top {
+    width: 100%;
+    background-color: blue;
+}
+
+#top .top_img1 img {
+    width: 50px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#top .top_one {
+    width: 1200px;
+    height: 48px;
+    margin: 0 auto;
+    position: relative;
+    background-color: orange;
+}
+
+#top .top_ul {
+    width: 824px;
+    height: 48px;
+}
+
+#top .top_ul .topul_li {
+    height: 48px;
+    margin-right: 22px;
+    font-size: 15px;
+    float: left;
+    list-style: none;
+    line-height: 48px;
+}
+
+#top .top_zd {
+    width: 110px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#top .top_zd .topzd_ul {
+    width: 60px;
+    float: left;
+    background-color: saddlebrown;
+}
+
+#top .top_zd .topzd_ul_li {
+    width: 30px;
+    height: 48px;
+    float: left;
+    font-size: 12px;
+    list-style: none;
+    color: orchid;
+    line-height: 48px;
+}
+
+#top .top_zd img {
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+
+/* 第二栏 */
+
+#top_secendlie {
+    width: 100%;
+    height: 72px;
+    background-color: #cccccc;
+}
+
+#top_secendlie .top_lie {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    background-color: saddlebrown;
+}
+
+#top_secendlie .top_lie .top_lie_ul {
+    width: 824px;
+    height: 48px;
+    background-color: salmon;
+}
+
+#top_secendlie .top_lie .top_lie_ul .toplie_ul_li {
+    height: 72px;
+    float: left;
+    font-size: 17px;
+    list-style: none;
+    margin-right: 45px;
+    line-height: 72px;
+}
+
+#top_secendlie .top_sousuo {
+    margin-top: 20px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#top_secendlie .top_sousuo form {
+    outline: none;
+}
+
+#top_secendlie .top_sousuo input {
+    width: 240px;
+    height: 30px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    border: 1px solid black;
+    outline: none;
+}
+
+
+/* 小列表 */
+
+#xl {
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid papayawhip;
+}
+
+#dsl .dsll {
+    width: 1200px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+#dsl .dsll p {
+    font-size: 12px;
+    line-height: 35px;
+    color: papayawhip;
+    float: left;
+}
+
+#dsl .dsll div {
+    float: right;
+}
+
+#dsl .dsll div img {
+    width: 99px;
+    height: 24px;
+    margin-top: 5px;
+}
+
+#main {
+    width: 100%;
+    background: white;
+}
+
+#main #mainn {
+    width: 1200px;
+    height: 665px;
+    margin: 0 auto;
+}
+
+#main #mainn .main-l {
+    width: 520px;
+    height: 665px;
+    float: left;
+}
+
+#main #mainn .main-l .bigtu {
+    width: 520px;
+    height: 520px;
+    background: url(../../images/xiangqing/xq-b1.jpg);
+}
+
+#main #mainn .main-l .small {
+    width: 525px;
+    height: 90px;
+    position: relative;
+    margin-top: 20px;
+}
+
+#main #mainn .main-l .small .smalltu {
+    width: 465px;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    margin-left: 30px;
+}
+
+#main #mainn .main-l .small .smalltu img {
+    margin-right: 3px;
+    border: 1px solid #ccc;
+}
+
+#main #mainn .main-l .small span {
+    line-height: 84px;
+    color: #A5A5A5;
+    position: absolute;
+    font-size: 22px;
+}
+
+#main #mainn .main-l .small span:first-of-type {
+    left: 0;
+}
+
+#main #mainn .main-l .small span:last-of-type {
+    right: 0;
+}
+
+#main #mainn .main-l article {
+    width: 520px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+#main #mainn .main-l article p {
+    font-size: 13px;
+    line-height: 30px;
+}
+
+#main #mainn .main-l article p:first-child {
+    float: left;
+    color: #B9A5A5;
+}
+
+#main #mainn .main-l article p:nth-child(2) {
+    float: right;
+    cursor: pointer;
+}
+
+#main #mainn .main-l article p:nth-child(2):hover {
+    color: red;
+}
+
+#main #mainn .main-l article p:nth-child(2) span {
+    font-size: 12px;
+    color: red;
+    margin-left: 3px;
+}
+
+#main #mainn .main-l article p:last-child {
+    float: right;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    padding-left: 8px;
+}
+
+#main #mainn .main-l article p:last-child:hover {
+    color: red;
+}
+
+#main #mainn .main-l article p:last-child span {
+    font-size: 12px;
+    color: red;
+    margin-left: 3px;
+}
+
+#main #mainn .main-r {
+    width: 650px;
+    height: 665px;
+    float: right;
+}
+
+#main #mainn .main-r h1 {
+    margin-top: 34px;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+#main #mainn .main-r .p1 {
+    font-size: 14px;
+    color: #A2A2A2;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+
+#main #mainn .main-r .div1 {
+    background: #F9F9F9;
+}
+
+#main #mainn .main-r .div1 .jiage {
+    width: 100%;
+    height: 38px;
+    margin: 9px 0;
+}
+
+#main #mainn .main-r .div1 .jiage>p:first-child {
+    font-size: 12px;
+    color: #434242;
+    line-height: 38px;
+    float: left;
+    margin-left: 10px;
+}
+
+#main #mainn .main-r .div1 .jiage>p:nth-child(2) {
+    font-size: 20px;
+    color: red;
+    float: left;
+    line-height: 38px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+#main #mainn .main-r .div1 .jiage>p:nth-child(2) span {
+    font-size: 12px;
+}
+
+#main #mainn .main-r .div1 .jiage>p:last-child {
+    float: right;
+    border-right: 1px solid #E0E0E0;
+}
+
+#main #mainn .main-r .div1 .jiage>p:last-child span {
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+#main #mainn .main-r .div1 .jiage>p:last-child span:first-child {
+    color: #A5A5A5;
+}
+
+#main #mainn .main-r .div1 .jiage>p:last-child span:last-child {
+    color: #4A4A4A;
+}
+
+#main #mainn .main-r .fenqi {
+    font-size: 13px;
+    width: 622px;
+    height: 30px;
+    margin: 15px 0 0 20px;
+    position: relative;
+}
+
+#main #mainn .main-r .fenqi>p {
+    float: left;
+    line-height: 30px;
+}
+
+#main #mainn .main-r .fenqi>div {
+    float: left;
+    width: 224px;
+    height: 25px;
+    border: 1px solid #aaa;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#main #mainn .main-r .fenqi .huabei {
+    position: absolute;
+    left: 54px;
+    margin-left: 30px;
+    background: url("https://p3.lefile.cn/product/adminweb/2019/05/06/e655fdc5-86aa-4b71-81bd-a03e5bab0be4.png") no-repeat 2px 3px;
+    background-size: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#main #mainn .main-r .fenqi .huabei:hover {
+    background: url("https://p3.lefile.cn/product/adminweb/2019/05/06/e655fdc5-86aa-4b71-81bd-a03e5bab0be4.png") no-repeat 2px 3px;
+    background-color: white;
+    background-size: 100%;
+    height: 215px;
+}
+
+#main #mainn .main-r .fenqi .huabei .radio {
+    margin-top: 30px;
+    width: 50px;
+    float: left;
+}
+
+#main #mainn .main-r .fenqi .huabei .radio input {
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#main #mainn .main-r .fenqi .huabei .radio input:nth-child(2) {
+    margin-top: 50px;
+}
+
+#main #mainn .main-r .fenqi .huabei .radio input:last-child {
+    margin-top: 50px;
+}
+
+#main #mainn .main-r .fenqi .huabei ul {
+    float: left;
+    margin-top: 30px;
+    list-style: none;
+    font-size: 13px;
+    color: #aaa;
+}
+
+#main #mainn .main-r .fenqi .huabei ul li {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#main #mainn .main-r .fenqi .huabei ul li:hover {
+    color: red;
+}
+
+#main #mainn .main-r .fenqi .baitiao {
+    position: absolute;
+    left: 315px;
+    background: white;
+    margin-left: 10px;
+    background: url("https://p3.lefile.cn/product/adminweb/2020/03/08/76da00ca-136c-4d8d-9fb7-86db374a85d9.png") no-repeat 2px 3px;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+#main #mainn .main-r .fenqi .baitiao:hover {
+    background: url("https://p3.lefile.cn/product/adminweb/2020/03/08/76da00ca-136c-4d8d-9fb7-86db374a85d9.png") no-repeat 2px 3px;
+    background-color: white;
+    background-size: 100%;
+    height: 215px;
+}
+
+#main #mainn .main-r .fenqi .baitiao .radio {
+    margin-top: 30px;
+    width: 50px;
+    float: left;
+}
+
+#main #mainn .main-r .fenqi .baitiao .radio input {
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#main #mainn .main-r .fenqi .baitiao .radio input:nth-child(2) {
+    margin-top: 50px;
+}
+
+#main #mainn .main-r .fenqi .baitiao .radio input:last-child {
+    margin-top: 50px;
+}
+
+#main #mainn .main-r .fenqi .baitiao ul {
+    float: left;
+    margin-top: 30px;
+    list-style: none;
+    font-size: 13px;
+    color: #aaa;
+}
+
+#main #mainn .main-r .fenqi .baitiao ul li {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#main #mainn .main-r .fenqi .baitiao ul li:hover {
+    color: red;
+}
+
+#main #mainn .main-r .goumai {
+    width: 622px;
+    height: 26px;
+    margin: 15px 0 0px 20px;
+    font-size: 13px;
+}
+
+#main #mainn .main-r .goumai>p {
+    float: left;
+}
+
+#main #mainn .main-r .goumai>div {
+    float: left;
+    color: #aaa;
+    margin-left: 30px;
+}
+
+#main #mainn .main-r .goumai>div input {
+    width: 50px;
+    text-align: center;
+    user-select: none;
+}
+
+#main #mainn .main-r .goumai>div span {
+    line-height: 26px;
+    color: black;
+    user-select: none;
+}
+
+#main #mainn .main-r .gouwuche {
+    width: 622px;
+    height: 38px;
+    margin: 15px 0 0px 20px;
+}
+
+#main #mainn .main-r .gouwuche div {
+    cursor: pointer;
+    user-select: none;
+}
+
+#main #mainn .main-r .gouwuche .liji {
+    width: 132px;
+    height: 38px;
+    background: red;
+    color: white;
+    float: left;
+    margin-left: 80px;
+    text-align: center;
+    line-height: 38px;
+}
+
+#main #mainn .main-r .gouwuche .jiaru {
+    background: #FFEDED;
+    color: red;
+    float: left;
+    margin-left: 15px;
+    width: 132px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+}
+
+#main #mainn .main-r .gouwuche .jiaru a {
+    color: red;
+    text-decoration: none;
+}
+
+#main #mainn .main-r .p {
+    width: 622px;
+    height: 30px;
+    margin: 15px 0 0px 20px;
+    position: relative;
+}
+
+#main #mainn .main-r .p p {
+    margin-left: 80px;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+#main #mainn .main-r .p p span {
+    color: #3E8DE4;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#main #mainn .main-r .p p span img {
+    width: 124px;
+    height: 130px;
+    position: absolute;
+    left: 100px;
+    top: 23px;
+    display: none;
+    z-index: 1;
+}

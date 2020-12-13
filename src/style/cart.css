@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 头部 */
+
+#top_tb {
+    width: 100%;
+    height: 38px;
+    background: black;
+}
+
+.top_rg {
+    width: 1200px;
+    height: 38px;
+    margin: 0 auto;
+}
+
+
+/* 头部右边 */
+
+.top_rg ul {
+    float: right;
+    list-style: none;
+}
+
+.top_rg ul li {
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 0 8px;
+    float: left;
+    color: blanchedalmond;
+    cursor: pointer;
+    border-right: 1px solid white;
+}
+
+.top_rg ul li:hover {
+    color: red;
+}
+
+
+/* 左右图片   */
+
+#lr {
+    width: 100%;
+    height: 60px;
+}
+
+#lr .zy {
+    width: 1200px;
+    height: 60px;
+    margin-top: 15px;
+    margin: 0 auto;
+}
+
+#lr .zy img:first-child {
+    float: left;
+    margin-top: 10px;
+}
+
+#lr .zy img:last-child {
+    float: right;
+}
+
+
+/* 列表 */
+
+#lie {
+    width: 1200px;
+    margin-top: 20px;
+    min-height: 77px;
+    margin: 0 auto;
+}
+
+#lie .lie_of {
+    width: 1198px;
+    height: 37px;
+    margin-bottom: 10px;
+    background: rosybrown;
+    border: 1px solid royalblue;
+}
+
+#lie .lie_of p {
+    float: left;
+    line-height: 37px;
+}
+
+#lie .lie_of .sp {
+    width: 463px;
+    height: 37px;
+    text-align: center;
+}
+
+#lie .lie_of .gg {
+    width: 162px;
+    height: 37px;
+    text-align: center;
+}
+
+#lie .lie_of .dj,
+.sl,
+.je {
+    width: 152px;
+    height: 37px;
+    text-align: center;
+}
+
+#lie .lie_of .cz {
+    width: 116px;
+    height: 37px;
+    text-align: center;
+}
+
+
+/* js添加部分 */
+
+#lr .main {
+    width: 1200px;
+}
+
+#lie .end {
+    width: 162px;
+    height: 40px;
+    margin-top: 15px;
+    line-height: 40px;
+    border-radius: 8px;
+    float: right;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    background: red;
+    text-align: center;
+}

@@ -1,0 +1,191 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* 头部 */
+
+#top {
+    width: 100%;
+    background-color: blue;
+}
+
+#top .top_img1 img {
+    width: 50px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#top .top_one {
+    width: 1200px;
+    height: 48px;
+    margin: 0 auto;
+    position: relative;
+    background-color: orange;
+}
+
+#top .top_ul {
+    width: 824px;
+    height: 48px;
+}
+
+#top .top_ul .topul_li {
+    height: 48px;
+    margin-right: 22px;
+    font-size: 15px;
+    float: left;
+    list-style: none;
+    line-height: 48px;
+}
+
+#top .top_zd {
+    width: 110px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#top .top_zd img {
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+
+/* 主要内容 */
+
+#register {
+    width: 856px;
+    height: 565px;
+    margin: 0 auto;
+    margin-top: 60px;
+    overflow: hidden;
+    background: white;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+#register .register-c {
+    width: 358px;
+    height: 475px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#register .register-c .title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+
+/* 表单 */
+
+#register .register-c form {
+    width: 428px;
+}
+
+#register .register-c form input {
+    width: 328px;
+    height: 50px;
+    margin-bottom: 14px;
+    padding: 0 15px;
+    line-height: 50px;
+    border: 1px solid #ccc;
+}
+
+#register .register-c form input:nth-of-type(2) {
+    height: 50px;
+    width: 213px;
+    float: left;
+}
+
+#register .register-c form>span {
+    font-size: 12px;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+
+
+/* 验证码 */
+
+#register .register-c form .yanzhengma {
+    font-size: 16px;
+    display: inline-block;
+    width: 112px;
+    height: 50px;
+    text-align: center;
+    color: skyblue;
+    border: 1px solid #ccc;
+    line-height: 55px;
+    background: #F7F7F7;
+    border-left: none;
+    cursor: pointer;
+}
+
+#register .register-c form .tishi {
+    width: 358px;
+    height: 24px;
+    margin-bottom: 14px;
+    display: none;
+}
+
+
+/* 立即注册 */
+
+#register .register-c form .sub {
+    width: 358px;
+    color: white;
+    background: red;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+#register .register-c form .tiaokuan {
+    width: 358px;
+    font-size: 12px;
+    color: #757575;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#register .register-c form .tiaokuan>b {
+    color: black;
+    cursor: pointer;
+}
+
+#register .register-c form .footer {
+    margin-top: 14px;
+}
+
+#register .register-c form .footer p {
+    font-size: 14px;
+    color: #8B758B;
+}
+
+#register .register-c form .footer p span {
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+}
+
+#register .register-c form .footer p span:hover {
+    color: red;
+}
+
+#register .register-c form .footer p:first-child {
+    float: left;
+}
+
+#register .register-c form .footer p:last-child {
+    float: right;
+    margin-right: 75px;
+}

@@ -56,11 +56,150 @@
     margin-right: 8px;
 }
 
-#largin {
+
+/* #largin {
     width: 100%;
 }
 
 .main {
     height: 590px;
     background-size: cover;
+} */
+
+
+/* 首部 */
+
+#login {
+    width: 1200px;
+    height: 590px;
+    margin: 0 auto;
+    background: brown;
+}
+
+
+/* 内部 */
+
+.huiyuan {
+    width: 410px;
+    height: 525px;
+    margin-top: 32px;
+    margin-right: 21px;
+    float: right;
+    background-color: #fff;
+    position: relative;
+}
+
+.huiyuan h1 {
+    margin-top: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+/* 手机号码 */
+
+form .haoma,
+form .password {
+    width: 348px;
+    height: 50px;
+    color: #8c8c8c;
+    margin-left: 20px;
+}
+
+.haoma {
+    margin-top: 15px;
+}
+
+.password {
+    margin-top: 20px;
+}
+
+.mima {
+    width: 12px;
+    height: 12px;
+    margin-top: 8px;
+    margin-left: 20px;
+    float: left;
+}
+
+.huiyuan form .jz {
+    width: 50px;
+    height: 12px;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-left: 40px;
+    float: left;
+    display: block;
+}
+
+.dengl {
+    width: 348px;
+    height: 50px;
+    font-size: 16px;
+    background: red;
+    color: white;
+    border: 0px;
+    margin-left: 20px;
+}
+
+
+/* 提示 */
+
+.ti {
+    width: 348px;
+    height: 30px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.ti p {
+    float: left;
+    color: red;
+    cursor: pointer;
+}
+
+.ti ul {
+    float: right;
+    list-style: none;
+}
+
+.ti ul li {
+    float: left;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.ti ul li:first-child {
+    border-right: 1px solid #ccc;
+}
+
+.ti ul li:hover {
+    color: red;
+}
+
+.qi {
+    width: 310px;
+    height: 20px;
+    margin-top: 10px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.qi span {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.qi span:first-child {
+    width: 90px;
+    height: 1px;
+    background: black;
+}
+
+.qi span:last-child {
+    width: 90px;
+    height: 1px;
+    background: black;
 }
