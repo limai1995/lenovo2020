@@ -71,6 +71,8 @@
             </div>
         </div>
     </div>
+
+    <!-- 详情 -->
     <div id="dsl">
         <div class="dsll">
             <p>首页商品详情 > 2020款小新 Pro 13 英特尔酷睿i7 13.3英寸全面屏轻薄笔记本 亮银</p>
@@ -79,46 +81,37 @@
             </div>
         </div>
     </div>
-    <!-- 大图小图添加购物车------------------------------------ -->
+    <!-- 大图小图----->
     <div id="main">
         <div id="mainn">
-            <!-- 大图小图--------------------------------- -->
-            <div class="main-l">
-                <div class="bigtu"></div>
-
-                <div class="small">
-                    <span class="iconfont icon-jiantou" style="transform:rotate(180deg);display:inline-block;"></span>
-                    <div class="smalltu">
-                        <img src="https://p4.lefile.cn/product/adminweb/2020/09/02/r8EXCWqHHgDfpzLseXx4OjB6X-6883.w84.jpg" alt="" class="xq-b1">
-                        <img src="https://p2.lefile.cn/product/adminweb/2020/08/21/LUJLS9yC7SLHwrEPBWKO7Rfn5-5048.w84.jpg" alt="" class="xq-b2">
-                        <img src="https://p1.lefile.cn/product/adminweb/2020/08/21/XevxodHqkx1NcfJUj9FODLcW4-5086.w84.jpg" alt="" class="xq-b3">
-                        <img src="https://p1.lefile.cn/product/adminweb/2020/08/21/M0A2upd5vsj7v2ItSgChi5uHz-5190.w84.jpg" alt="" class="xq-b4">
-                        <img src="https://p4.lefile.cn/product/adminweb/2020/08/21/18tjzXpyGmOXKTsZgkJ4Wcgox-5354.w84.jpg" alt="" class="xq-b5">
-                        <img src="https://p4.lefile.cn/product/adminweb/2020/08/21/n01gugWVpvVrkmQ6ie3mazs6f-5409.w84.jpg" alt="" class="xq-b6">
-                        <img src="https://p1.lefile.cn/product/adminweb/2020/08/21/F3o2I4GN4nj9peLswW39L10mw-5467.w84.jpg" alt="" class="xq-b7">
-                    </div>
-                    <span class="iconfont icon-jiantou"></span>
+            <!-- 大图小图----->
+            <div class="wrap">
+                <div id="spic">
+                    <img src="" alt="" id="smallpic">
+                    <div id="sf"></div>
                 </div>
-                <article>
-                    <p>商品编号：82DN0000CD</p>
-                    <p>
-                        <span class="iconfont icon-deng"></span> 分享有礼
-                    </p>
-                    <p>
-                        <span class="iconfont icon-xin1"></span> 收藏
-                    </p>
-                </article>
+                <div id="bf">
+                    <img src="" alt="" id="bpic">
+                </div>
+                <div id="ulist">
+                    <a href="javascript:;" id="left">&lt;</a>
+                    <div id="list">
+                        <ul>
+                            <!-- 渲染放大镜下面的小图 -->
+                        </ul>
+                    </div>
+                    <a href="javascript:;" id="gt">&gt;</a>
+                </div>
             </div>
-
 
             <!-- 添加购物车-------------------------------------- -->
             <div class="main-r">
-                <h1>拯救者 Y7000 2020 英特尔酷睿i5 15.6英寸游戏笔记本 幻影黑</h1>
+                <h1 class="loadtitle">拯救者 Y7000 2020 英特尔酷睿i5 15.6英寸游戏笔记本 幻影黑</h1>
                 <p class="p1">第十代英特尔酷睿i5-10210U/Windows 10 家庭中文版/13.3英寸/16GB/512G SSD/GeForce MX350 2G独显/亮银</p>
                 <div class="div1">
                     <div class="jiage">
                         <p>商城价</p>
-                        <p><span>￥</span>5998</p>
+                        <p><strong><em>￥</em><i class="loadpcp"></i></strong></p>
                         <p>
                             <span>累计评价</span>
                             <br>
@@ -126,6 +119,7 @@
                         </p>
                     </div>
                 </div>
+                <!-- 分期 -->
                 <div class="fenqi">
                     <!-- ? -->
                     <p>分期付款</p>
@@ -159,16 +153,16 @@
                         </div>
                         <ul>
                             <li>
-                                <p>¥2216.16x3期</p>
-                                <p>手续费: 约￥49.83/期</p>
+                                <p>¥2000x3期</p>
+                                <p>手续费: 约￥50/期</p>
                             </li>
                             <li>
-                                <p>¥1131.91x6期</p>
-                                <p>手续费: 约￥48.75/期</p>
+                                <p>¥1200x6期</p>
+                                <p>手续费: 约￥50.75/期</p>
                             </li>
                             <li>
-                                <p>¥582.20x12期</p>
-                                <p>手续费: 约￥40.62/期</p>
+                                <p>¥600x12期</p>
+                                <p>手续费: 约￥30/期</p>
                             </li>
                         </ul>
                     </div>
@@ -176,14 +170,14 @@
                 <div class="goumai">
                     <p>购买数量</p>
                     <div>
-                        <span class="iconfont icon-jianhao4"></span>
-                        <input type="text" value=1>
-                        <span class="iconfont icon-jiahao1"></span>
+                        <span>-</span>
+                        <input type="text" value="1" id="count">
+                        <span>+</span>
                     </div>
                 </div>
                 <div class="gouwuche">
                     <div class="liji">立即购买</div>
-                    <div class="jiaru">加入购物车</div>
+                    <div class="jiaru"><a href="cart.html">加入购物车</a></div>
                 </div>
                 <div class="p">
                     <p>使用 <span>联想智选APP </span> 下单，享受更多优惠</p>
@@ -192,6 +186,9 @@
             </div>
         </div>
     </div>
+    </div>
+
+
 
     <!-- 右边的盒子 -->
     <div id="right">
@@ -222,46 +219,14 @@
             </li>
             <li>
                 <img src="https://p3.lefile.cn/product/adminweb/2020/02/12/9e4d19d9-cf6b-4970-a506-f792a2f1106a.png" alt="">
-                <p>顶部</p>
+                <!-- <p>顶部</p> -->
             </li>
         </ul>
     </div>
 
 
-    <!-- <div class="goodsinfo">
-        <div class="box">
-            <a href="cart.html" target="_blank">进入购物车</a>
-        </div>
-        <div class="wrap">
-            <div id="spic">
-                <img src="" alt="" id="smallpic">
-                <div id="sf"></div>
-            </div>
-            <div id="bf">
-                <img src="" alt="" id="bpic">
-            </div>
-            <div id="ulist">
-                <a href="javascript:;" id="left">&lt;</a>
-                <div id="list">
-                    <ul>
-                        渲染放大镜下面的小图
-                </ul>
-            </div>
-            <a href="javascript:;" id="right">&gt;</a>
-        </div>
-    </div>
-    <div class="goodsinfo-word">
-        <div class="p-name">
-            <a class="loadtitle" href="##"></a>
-        </div>
-        <div class="p-price"><strong><em>￥</em><i class="loadpcp"></i></strong></div>
-        <div class="p-btn">
-            <input type="text" id="count" value="1" />
-            <a href="javascript:;">加入购物车</a>
-            void(0)
-        </div>
-    </div>
-    </div> -->
+    <script type="text/javascript" src="scale.js"></script>
+
 </body>
 
 </html>

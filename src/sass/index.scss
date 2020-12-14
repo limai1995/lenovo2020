@@ -3,6 +3,12 @@
     padding: 0px;
 }
 
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
 // 第一栏
 #top {
     width: 100%;
@@ -130,6 +136,7 @@
         height: 470px;
         position: relative;
         background-color: brown;
+        overflow: hidden;
         .luntu {
             width: 100%;
             .luntu_li {
@@ -138,7 +145,7 @@
                 left: 0;
                 opacity: 0;
                 img {
-                    width: 1520px;
+                    width: 100%;
                     height: 470px;
                 }
             }
@@ -280,5 +287,126 @@
             top: 160px;
             right: 86px;
         }
+    }
+}
+
+// 会员福利
+#vip {
+    width: 100%;
+    height: 95px;
+    .vip-v {
+        width: 1200px;
+        height: 95px;
+        margin: 0 auto;
+        background-color: wheat;
+    }
+    ul {
+        width: 1200px;
+        height: 95px;
+        list-style: none;
+        >li {
+            width: 100px;
+            height: 95px;
+            float: left;
+            display: table-cell;
+            // 图片居中
+            text-align: center;
+            vertical-align: middle;
+            // border-right: 1px solid royalblue;
+            >img {
+                width: 30px;
+                height: 30px;
+                line-height: 95px;
+                margin: 0 auto;
+                margin-top: 24px;
+                // display: inline-block;
+                // position: absolute;
+                // top: 50%;
+                // left: 50%;
+                // margin-top: 15px;
+                // margin-left: 15px;
+                >span {
+                    display: inline-block;
+                    text-align: center;
+                    margin-top: 15px;
+                }
+            }
+        }
+        li:hover {
+            color: red;
+            transition: 0.3;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+// 渲染
+.list {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+    ul {
+        width: 1200px;
+        margin: 0 auto;
+        list-style: none;
+        li {
+            width: 200px;
+            height: 310px;
+            padding: 10px;
+            margin: 0 20px 20px 0;
+            position: relative;
+            float: left;
+        }
+        p {
+            width: 200px;
+            height: 48px;
+            line-height: 24px;
+            overflow: hidden;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            display: block;
+        }
+        span {
+            display: block
+        }
+        li:hover {
+            color: red;
+            transition: 0.3;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+#right {
+    width: 50px;
+    height: 46 0px;
+    position: fixed;
+    background: white;
+    right: 16px;
+    top: 150px;
+    padding: 10px 0;
+    border-radius: 2px;
+    ul {
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        text-align: center;
+        padding-right: 5px;
+        li {
+            cursor: pointer;
+            border-bottom: 1px solid #efe;
+            img {
+                width: 50px;
+                height: 60px;
+                margin-top: 15px;
+                font-size: 24px;
+                color: #bbb;
+            }
+        }
+    }
+    li:hover {
+        color: #e2231a;
     }
 }

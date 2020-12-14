@@ -70,14 +70,14 @@
     padding-bottom: 20px;
 }
 
-#register .register-c {
+#register .main {
     width: 358px;
     height: 475px;
     margin: auto;
     margin-top: 50px;
 }
 
-#register .register-c .title {
+#register .main .title {
     text-align: center;
     font-size: 30px;
     margin-bottom: 40px;
@@ -86,11 +86,11 @@
 
 /* 表单 */
 
-#register .register-c form {
+#register .main form {
     width: 428px;
 }
 
-#register .register-c form input {
+#register .main form input {
     width: 328px;
     height: 50px;
     margin-bottom: 14px;
@@ -99,13 +99,13 @@
     border: 1px solid #ccc;
 }
 
-#register .register-c form input:nth-of-type(2) {
+#register .main form input:nth-of-type(2) {
     height: 50px;
     width: 213px;
     float: left;
 }
 
-#register .register-c form>span {
+#register .main form>span {
     font-size: 12px;
     display: inline-block;
     width: 60px;
@@ -116,7 +116,7 @@
 
 /* 验证码 */
 
-#register .register-c form .yanzhengma {
+#register .main form .yanzhengma {
     font-size: 16px;
     display: inline-block;
     width: 112px;
@@ -130,7 +130,7 @@
     cursor: pointer;
 }
 
-#register .register-c form .tishi {
+#register .main form .tishi {
     width: 358px;
     height: 24px;
     margin-bottom: 14px;
@@ -140,7 +140,7 @@
 
 /* 立即注册 */
 
-#register .register-c form .sub {
+#register .main form .sub {
     width: 358px;
     color: white;
     background: red;
@@ -149,7 +149,10 @@
     user-select: none;
 }
 
-#register .register-c form .tiaokuan {
+
+/* 条款 */
+
+#register .main form .clouse {
     width: 358px;
     font-size: 12px;
     color: #757575;
@@ -157,35 +160,35 @@
     border-bottom: 1px solid #E0E0E0;
 }
 
-#register .register-c form .tiaokuan>b {
+#register .main form .clouse>b {
     color: black;
     cursor: pointer;
 }
 
-#register .register-c form .footer {
+#register .main form .footer {
     margin-top: 14px;
 }
 
-#register .register-c form .footer p {
+#register .main form .footer p {
     font-size: 14px;
     color: #8B758B;
 }
 
-#register .register-c form .footer p span {
+#register .main form .footer p span {
     font-size: 12px;
     color: black;
     cursor: pointer;
 }
 
-#register .register-c form .footer p span:hover {
+#register .main form .footer p span:hover {
     color: red;
 }
 
-#register .register-c form .footer p:first-child {
+#register .main form .footer p:first-child {
     float: left;
 }
 
-#register .register-c form .footer p:last-child {
+#register .main form .footer p:last-child {
     float: right;
     margin-right: 75px;
 }

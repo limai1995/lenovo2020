@@ -153,6 +153,9 @@
     margin-top: 5px;
 }
 
+
+/* 大图小图 */
+
 #main {
     width: 100%;
     background: white;
@@ -164,85 +167,165 @@
     margin: 0 auto;
 }
 
-#main #mainn .main-l {
-    width: 520px;
-    height: 665px;
+.wrap {
     float: left;
-}
-
-#main #mainn .main-l .bigtu {
-    width: 520px;
-    height: 520px;
-    background: url(../../images/xiangqing/xq-b1.jpg);
-}
-
-#main #mainn .main-l .small {
-    width: 525px;
-    height: 90px;
     position: relative;
-    margin-top: 20px;
 }
 
-#main #mainn .main-l .small .smalltu {
-    width: 465px;
-    height: 100%;
-    overflow: hidden;
+#spic {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #000;
     float: left;
-    margin-left: 30px;
+    position: relative;
 }
 
-#main #mainn .main-l .small .smalltu img {
-    margin-right: 3px;
+#spic img {
+    width: 400px;
+    height: 400px;
+}
+
+#sf {
+    width: 50px;
+    height: 50px;
+    background: orange;
+    opacity: 0.3;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+}
+
+#bf {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #000;
+    overflow: hidden;
+    position: absolute;
+    left: 410px;
+    visibility: hidden;
+    z-index: 100;
+}
+
+#bf img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 800px;
+    height: 800px;
+}
+
+#ulist {
+    position: absolute;
+    left: 0px;
+    top: 430px;
+    width: 402px;
+    height: 56px;
+    overflow: hidden;
+}
+
+#ulist a {
+    float: left;
+    width: 10px;
+    height: 54px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    line-height: 56px;
+    text-align: center;
+    background: #fff;
+}
+
+
+/* 五张小图 */
+
+#list {
+    float: left;
+    margin-left: 18px;
+    width: 372px;
+    position: relative;
+}
+
+#list li {
+    float: left;
+    width: 56px;
+    height: 56px;
+    padding-right: 6px;
+}
+
+#list li img {
+    width: 52px;
+    height: 52px;
     border: 1px solid #ccc;
 }
 
-#main #mainn .main-l .small span {
-    line-height: 84px;
-    color: #A5A5A5;
+.wrap ul {
+    list-style: none;
+    float: left;
     position: absolute;
-    font-size: 22px;
+    left: 0px;
+    top: 0px;
 }
 
-#main #mainn .main-l .small span:first-of-type {
-    left: 0;
+.wrap ul li {
+    float: left;
+    width: 56px;
+    height: 56px;
+    padding-right: 6px;
 }
 
-#main #mainn .main-l .small span:last-of-type {
-    right: 0;
+.wrap ul li img {
+    width: 52px;
+    height: 52px;
+    border: 1px solid #ccc;
 }
 
-#main #mainn .main-l article {
+#gt {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: #333;
+}
+
+#left {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    color: black;
+}
+
+#mainn article {
     width: 520px;
     height: 30px;
     margin-top: 5px;
 }
 
-#main #mainn .main-l article p {
+#main #mainn article p {
     font-size: 13px;
     line-height: 30px;
 }
 
-#main #mainn .main-l article p:first-child {
+#main #mainn article p:first-child {
     float: left;
     color: #B9A5A5;
 }
 
-#main #mainn .main-l article p:nth-child(2) {
+#main #mainn article p:nth-child(2) {
     float: right;
     cursor: pointer;
 }
 
-#main #mainn .main-l article p:nth-child(2):hover {
+#main #mainn article p:nth-child(2):hover {
     color: red;
 }
 
-#main #mainn .main-l article p:nth-child(2) span {
+#main #mainn article p:nth-child(2) span {
     font-size: 12px;
     color: red;
     margin-left: 3px;
 }
 
-#main #mainn .main-l article p:last-child {
+#main #mainn article p:last-child {
     float: right;
     width: 70px;
     height: 30px;
@@ -250,29 +333,32 @@
     padding-left: 8px;
 }
 
-#main #mainn .main-l article p:last-child:hover {
+#main #mainn article p:last-child:hover {
     color: red;
 }
 
-#main #mainn .main-l article p:last-child span {
+#main #mainn article p:last-child span {
     font-size: 12px;
     color: red;
     margin-left: 3px;
 }
 
-#main #mainn .main-r {
+
+/* 添加购物车 */
+
+#main .main-r {
     width: 650px;
     height: 665px;
     float: right;
 }
 
-#main #mainn .main-r h1 {
+#main .main-r h1 {
     margin-top: 34px;
     font-size: 22px;
     font-weight: normal;
 }
 
-#main #mainn .main-r .p1 {
+#main .main-r .p1 {
     font-size: 14px;
     color: #A2A2A2;
     margin-top: 8px;
@@ -280,17 +366,17 @@
     line-height: 22px;
 }
 
-#main #mainn .main-r .div1 {
+#main .main-r .div1 {
     background: #F9F9F9;
 }
 
-#main #mainn .main-r .div1 .jiage {
+#main .main-r .div1 .jiage {
     width: 100%;
     height: 38px;
     margin: 9px 0;
 }
 
-#main #mainn .main-r .div1 .jiage>p:first-child {
+#main .main-r .div1 .jiage>p:first-child {
     font-size: 12px;
     color: #434242;
     line-height: 38px;
@@ -298,7 +384,7 @@
     margin-left: 10px;
 }
 
-#main #mainn .main-r .div1 .jiage>p:nth-child(2) {
+#main .main-r .div1 .jiage>p:nth-child(2) {
     font-size: 20px;
     color: red;
     float: left;
@@ -307,29 +393,32 @@
     margin-left: 30px;
 }
 
-#main #mainn .main-r .div1 .jiage>p:nth-child(2) span {
+#main .main-r .div1 .jiage>p:nth-child(2) span {
     font-size: 12px;
 }
 
-#main #mainn .main-r .div1 .jiage>p:last-child {
+#main .main-r .div1 .jiage>p:last-child {
     float: right;
     border-right: 1px solid #E0E0E0;
 }
 
-#main #mainn .main-r .div1 .jiage>p:last-child span {
+#main .main-r .div1 .jiage>p:last-child span {
     font-size: 12px;
     padding: 0 10px;
 }
 
-#main #mainn .main-r .div1 .jiage>p:last-child span:first-child {
+#main .main-r .div1 .jiage>p:last-child span:first-child {
     color: #A5A5A5;
 }
 
-#main #mainn .main-r .div1 .jiage>p:last-child span:last-child {
+#main .main-r .div1 .jiage>p:last-child span:last-child {
     color: #4A4A4A;
 }
 
-#main #mainn .main-r .fenqi {
+
+/* 分期 */
+
+#main .main-r .fenqi {
     font-size: 13px;
     width: 622px;
     height: 30px;
@@ -337,12 +426,12 @@
     position: relative;
 }
 
-#main #mainn .main-r .fenqi>p {
+#main .main-r .fenqi>p {
     float: left;
     line-height: 30px;
 }
 
-#main #mainn .main-r .fenqi>div {
+#main .main-r .fenqi>div {
     float: left;
     width: 224px;
     height: 25px;
@@ -351,44 +440,47 @@
     cursor: pointer;
 }
 
-#main #mainn .main-r .fenqi .huabei {
+
+/* 花呗 */
+
+#main .main-r .fenqi .huabei {
     position: absolute;
     left: 54px;
     margin-left: 30px;
-    background: url("https://p3.lefile.cn/product/adminweb/2019/05/06/e655fdc5-86aa-4b71-81bd-a03e5bab0be4.png") no-repeat 2px 3px;
+    /* background: url("https://p3.lefile.cn/product/adminweb/2019/05/06/e655fdc5-86aa-4b71-81bd-a03e5bab0be4.png") no-repeat 2px 3px; */
     background-size: 100%;
     overflow: hidden;
     z-index: 1;
 }
 
-#main #mainn .main-r .fenqi .huabei:hover {
-    background: url("https://p3.lefile.cn/product/adminweb/2019/05/06/e655fdc5-86aa-4b71-81bd-a03e5bab0be4.png") no-repeat 2px 3px;
+#main .main-r .fenqi .huabei:hover {
+    /* background: url("https://p3.lefile.cn/product/adminweb/2019/05/06/e655fdc5-86aa-4b71-81bd-a03e5bab0be4.png") no-repeat 2px 3px; */
     background-color: white;
     background-size: 100%;
     height: 215px;
 }
 
-#main #mainn .main-r .fenqi .huabei .radio {
+#main .main-r .fenqi .huabei .radio {
     margin-top: 30px;
     width: 50px;
     float: left;
 }
 
-#main #mainn .main-r .fenqi .huabei .radio input {
+#main .main-r .fenqi .huabei .radio input {
     display: block;
     margin-left: 20px;
     margin-top: 20px;
 }
 
-#main #mainn .main-r .fenqi .huabei .radio input:nth-child(2) {
+#main .main-r .fenqi .huabei .radio input:nth-child(2) {
     margin-top: 50px;
 }
 
-#main #mainn .main-r .fenqi .huabei .radio input:last-child {
+#main .main-r .fenqi .huabei .radio input:last-child {
     margin-top: 50px;
 }
 
-#main #mainn .main-r .fenqi .huabei ul {
+#main .main-r .fenqi .huabei ul {
     float: left;
     margin-top: 30px;
     list-style: none;
@@ -396,54 +488,57 @@
     color: #aaa;
 }
 
-#main #mainn .main-r .fenqi .huabei ul li {
+#main .main-r .fenqi .huabei ul li {
     padding-top: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
 }
 
-#main #mainn .main-r .fenqi .huabei ul li:hover {
+#main .main-r .fenqi .huabei ul li:hover {
     color: red;
 }
 
-#main #mainn .main-r .fenqi .baitiao {
+
+/* 白条 */
+
+#main .main-r .fenqi .baitiao {
     position: absolute;
     left: 315px;
     background: white;
     margin-left: 10px;
-    background: url("https://p3.lefile.cn/product/adminweb/2020/03/08/76da00ca-136c-4d8d-9fb7-86db374a85d9.png") no-repeat 2px 3px;
+    /* background: url("https://p3.lefile.cn/product/adminweb/2020/03/08/76da00ca-136c-4d8d-9fb7-86db374a85d9.png") no-repeat 2px 3px; */
     background-size: 100%;
     overflow: hidden;
 }
 
-#main #mainn .main-r .fenqi .baitiao:hover {
-    background: url("https://p3.lefile.cn/product/adminweb/2020/03/08/76da00ca-136c-4d8d-9fb7-86db374a85d9.png") no-repeat 2px 3px;
+#main .main-r .fenqi .baitiao:hover {
+    /* background: url("https://p3.lefile.cn/product/adminweb/2020/03/08/76da00ca-136c-4d8d-9fb7-86db374a85d9.png") no-repeat 2px 3px; */
     background-color: white;
     background-size: 100%;
     height: 215px;
 }
 
-#main #mainn .main-r .fenqi .baitiao .radio {
+#main .main-r .fenqi .baitiao .radio {
     margin-top: 30px;
     width: 50px;
     float: left;
 }
 
-#main #mainn .main-r .fenqi .baitiao .radio input {
+#main .main-r .fenqi .baitiao .radio input {
     display: block;
     margin-left: 20px;
     margin-top: 20px;
 }
 
-#main #mainn .main-r .fenqi .baitiao .radio input:nth-child(2) {
+#main .main-r .fenqi .baitiao .radio input:nth-child(2) {
     margin-top: 50px;
 }
 
-#main #mainn .main-r .fenqi .baitiao .radio input:last-child {
+#main .main-r .fenqi .baitiao .radio input:last-child {
     margin-top: 50px;
 }
 
-#main #mainn .main-r .fenqi .baitiao ul {
+#main .main-r .fenqi .baitiao ul {
     float: left;
     margin-top: 30px;
     list-style: none;
@@ -451,57 +546,60 @@
     color: #aaa;
 }
 
-#main #mainn .main-r .fenqi .baitiao ul li {
+#main .main-r .fenqi .baitiao ul li {
     padding-top: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
 }
 
-#main #mainn .main-r .fenqi .baitiao ul li:hover {
+#main .main-r .fenqi .baitiao ul li:hover {
     color: red;
 }
 
-#main #mainn .main-r .goumai {
+
+/* 购买 */
+
+#main .main-r .goumai {
     width: 622px;
     height: 26px;
     margin: 15px 0 0px 20px;
     font-size: 13px;
 }
 
-#main #mainn .main-r .goumai>p {
+#main .main-r .goumai>p {
     float: left;
 }
 
-#main #mainn .main-r .goumai>div {
+#main .main-r .goumai>div {
     float: left;
     color: #aaa;
     margin-left: 30px;
 }
 
-#main #mainn .main-r .goumai>div input {
+#main .main-r .goumai>div input {
     width: 50px;
     text-align: center;
     user-select: none;
 }
 
-#main #mainn .main-r .goumai>div span {
+#main .main-r .goumai>div span {
     line-height: 26px;
     color: black;
     user-select: none;
 }
 
-#main #mainn .main-r .gouwuche {
+#main .main-r .gouwuche {
     width: 622px;
     height: 38px;
     margin: 15px 0 0px 20px;
 }
 
-#main #mainn .main-r .gouwuche div {
+#main .main-r .gouwuche div {
     cursor: pointer;
     user-select: none;
 }
 
-#main #mainn .main-r .gouwuche .liji {
+#main .main-r .gouwuche .liji {
     width: 132px;
     height: 38px;
     background: red;
@@ -512,7 +610,7 @@
     line-height: 38px;
 }
 
-#main #mainn .main-r .gouwuche .jiaru {
+#main .main-r .gouwuche .jiaru {
     background: #FFEDED;
     color: red;
     float: left;
@@ -523,31 +621,31 @@
     line-height: 38px;
 }
 
-#main #mainn .main-r .gouwuche .jiaru a {
+#main .main-r .gouwuche .jiaru a {
     color: red;
     text-decoration: none;
 }
 
-#main #mainn .main-r .p {
+#main .main-r .p {
     width: 622px;
     height: 30px;
     margin: 15px 0 0px 20px;
     position: relative;
 }
 
-#main #mainn .main-r .p p {
+#main .main-r .p p {
     margin-left: 80px;
     font-size: 13px;
     line-height: 30px;
 }
 
-#main #mainn .main-r .p p span {
+#main .main-r .p p span {
     color: #3E8DE4;
     text-decoration: underline;
     cursor: pointer;
 }
 
-#main #mainn .main-r .p p span img {
+#main .main-r .p p span img {
     width: 124px;
     height: 130px;
     position: absolute;
@@ -556,6 +654,9 @@
     display: none;
     z-index: 1;
 }
+
+
+/* 右边盒子 */
 
 #right {
     width: 50px;
@@ -598,14 +699,11 @@
     height: 24px;
 } */
 
-#right ul li p {
+
+/* #right ul li p {
     margin: 8px 0;
-}
+} */
 
 #right ul li:hover {
-    color: #e2231a;
-}
-
-#right ul li:hover .iconfont {
     color: #e2231a;
 }

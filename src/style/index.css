@@ -1,305 +1,378 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
 }
 
 #top {
-    width: 100%;
-    background-color: blue;
+  width: 100%;
+  background-color: blue;
 }
-
 #top .top_img1 img {
-    width: 50px;
-    height: 48px;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 50px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
 #top .top_one {
-    width: 1200px;
-    height: 48px;
-    margin: 0 auto;
-    position: relative;
-    background-color: orange;
+  width: 1200px;
+  height: 48px;
+  margin: 0 auto;
+  position: relative;
+  background-color: orange;
 }
-
 #top .top_ul {
-    width: 824px;
-    height: 48px;
+  width: 824px;
+  height: 48px;
 }
-
 #top .top_ul .topul_li {
-    height: 48px;
-    margin-right: 22px;
-    font-size: 15px;
-    float: left;
-    list-style: none;
-    line-height: 48px;
+  height: 48px;
+  margin-right: 22px;
+  font-size: 15px;
+  float: left;
+  list-style: none;
+  line-height: 48px;
 }
-
 #top .top_zd {
-    width: 110px;
-    position: absolute;
-    top: 0;
-    right: 0;
+  width: 110px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-
 #top .top_zd .topzd_ul {
-    width: 60px;
-    float: left;
-    background-color: saddlebrown;
+  width: 60px;
+  float: left;
+  background-color: saddlebrown;
 }
-
 #top .top_zd .topzd_ul_li {
-    width: 30px;
-    height: 48px;
-    float: left;
-    font-size: 12px;
-    list-style: none;
-    color: orchid;
-    line-height: 48px;
+  width: 30px;
+  height: 48px;
+  float: left;
+  font-size: 12px;
+  list-style: none;
+  color: orchid;
+  line-height: 48px;
 }
-
 #top .top_zd img {
-    width: 23px;
-    height: 23px;
-    text-align: center;
-    margin-top: 8px;
-    margin-right: 8px;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  margin-top: 8px;
+  margin-right: 8px;
 }
-
-
-/* 第二栏 */
 
 #top_secendlie {
-    width: 100%;
-    height: 72px;
-    background-color: #cccccc;
+  width: 100%;
+  height: 72px;
+  background-color: #cccccc;
 }
-
 #top_secendlie .top_lie {
-    width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    background-color: saddlebrown;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background-color: saddlebrown;
 }
-
 #top_secendlie .top_lie .top_lie_ul {
-    width: 824px;
-    height: 48px;
-    background-color: salmon;
+  width: 824px;
+  height: 48px;
+  background-color: salmon;
 }
-
 #top_secendlie .top_lie .top_lie_ul .toplie_ul_li {
-    height: 72px;
-    float: left;
-    font-size: 17px;
-    list-style: none;
-    margin-right: 45px;
-    line-height: 72px;
+  height: 72px;
+  float: left;
+  font-size: 17px;
+  list-style: none;
+  margin-right: 45px;
+  line-height: 72px;
 }
-
 #top_secendlie .top_sousuo {
-    margin-top: 20px;
-    float: right;
-    position: absolute;
-    top: 0;
-    right: 0;
+  margin-top: 20px;
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-
 #top_secendlie .top_sousuo form {
-    outline: none;
+  outline: none;
 }
-
 #top_secendlie .top_sousuo input {
-    width: 240px;
-    height: 30px;
-    background-color: antiquewhite;
-    border-radius: 15px;
-    border: 1px solid black;
-    outline: none;
+  width: 240px;
+  height: 30px;
+  background-color: antiquewhite;
+  border-radius: 15px;
+  border: 1px solid black;
+  outline: none;
 }
 
 #lunlie {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
-
 #lunlie .lunbo {
-    width: 100%;
-    height: 470px;
-    position: relative;
-    background-color: brown;
+  width: 100%;
+  height: 470px;
+  position: relative;
+  background-color: brown;
+  overflow: hidden;
 }
-
 #lunlie .lunbo .luntu {
-    width: 100%;
+  width: 100%;
 }
-
 #lunlie .lunbo .luntu .luntu_li {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
-
 #lunlie .lunbo .luntu .luntu_li img {
-    width: 1520px;
-    height: 470px;
+  width: 100%;
+  height: 470px;
 }
-
 #lunlie .lunbo .lunquan {
-    width: 100%;
-    height: 15px;
-    background-color: aqua;
-    position: absolute;
-    left: 0;
-    bottom: 20px;
+  width: 100%;
+  height: 15px;
+  background-color: aqua;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
 }
-
 #lunlie .lunbo .lunquanol {
-    width: 300px;
-    height: 15px;
-    margin: 0 auto;
-    background-color: chartreuse;
+  width: 300px;
+  height: 15px;
+  margin: 0 auto;
+  background-color: chartreuse;
 }
-
 #lunlie .lun_olli {
-    width: 12px;
-    height: 12px;
-    float: left;
-    margin: 0 auto;
-    border-radius: 50%;
-    margin-right: 35px;
-    background: #cccccc;
-    list-style: none;
+  width: 12px;
+  height: 12px;
+  float: left;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-right: 35px;
+  background: #cccccc;
+  list-style: none;
 }
-
 #lunlie .active {
-    background: blue;
+  background: blue;
 }
-
 #lunlie #left,
 #lunlie #right {
-    position: absolute;
-    top: 50%;
-    margin-top: -60px;
-    font-size: 100px;
-    text-decoration: none;
-    color: #ffffff;
+  position: absolute;
+  top: 50%;
+  margin-top: -60px;
+  font-size: 100px;
+  text-decoration: none;
+  color: #ffffff;
 }
-
 #lunlie #left {
-    left: 10px;
+  left: 10px;
 }
-
 #lunlie #right {
-    right: 10px;
+  right: 10px;
 }
-
 #lunlie .sanlie {
-    width: 1200px;
-    height: 480px;
-    position: absolute;
-    top: 0;
-    left: 160px;
-    z-index: 1;
-    overflow: hidden;
+  width: 1200px;
+  height: 480px;
+  position: absolute;
+  top: 0;
+  left: 160px;
+  z-index: 1;
+  overflow: hidden;
 }
-
 #lunlie .sanlie .yiji {
-    width: 280px;
-    height: 400px;
-    list-style: none;
-    background: rgba(255, 255, 255, 0.8);
-    margin-top: 40px;
+  width: 280px;
+  height: 400px;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 40px;
 }
-
 #lunlie .sanlie .yiji .yifa {
-    width: 214px;
-    height: 55px;
-    padding: 0 32px;
-    color: #4b4b4b;
-    cursor: pointer;
-    border: 1px solid #e6e6e6;
-    line-height: 55px;
-    font-weight: bold;
+  width: 214px;
+  height: 55px;
+  padding: 0 32px;
+  color: #4b4b4b;
+  cursor: pointer;
+  border: 1px solid #e6e6e6;
+  line-height: 55px;
+  font-weight: bold;
 }
-
 #lunlie .sanlie span {
-    float: right;
+  float: right;
 }
-
 #lunlie .sanlie .yifa:hover {
-    background-color: seashell;
+  background-color: seashell;
 }
-
 #lunlie .sanlie .yifa:hover .erji {
-    display: block;
+  display: block;
 }
-
 #lunlie .sanlie .erji {
-    width: 960px;
-    height: 378px;
-    position: absolute;
-    top: 40px;
-    left: 280px;
-    padding: 15px;
-    font-size: 12px;
-    color: block;
-    background: white;
-    display: none;
+  width: 960px;
+  height: 378px;
+  position: absolute;
+  top: 40px;
+  left: 280px;
+  padding: 15px;
+  font-size: 12px;
+  color: block;
+  background: white;
+  display: none;
 }
-
-#lunlie .sanlie .erji>ul {
-    width: 600px;
-    height: 20px;
-    line-height: 20px;
-    margin: 20px 0;
-    list-style: none;
+#lunlie .sanlie .erji > ul {
+  width: 600px;
+  height: 20px;
+  line-height: 20px;
+  margin: 20px 0;
+  list-style: none;
 }
-
-#lunlie .sanlie .erji>ul>li {
-    padding: 0 10px;
-    cursor: pointer;
-    float: left;
-    border-right: 1px solid #dddddd;
+#lunlie .sanlie .erji > ul > li {
+  padding: 0 10px;
+  cursor: pointer;
+  float: left;
+  border-right: 1px solid #dddddd;
 }
-
-#lunlie .sanlie .erji>ul>li>span {
-    font-size: 14px;
+#lunlie .sanlie .erji > ul > li > span {
+  font-size: 14px;
 }
-
-#lunlie .sanlie .erji>ul>li:hover {
-    color: red;
+#lunlie .sanlie .erji > ul > li:hover {
+  color: red;
 }
-
-#lunlie .sanlie .erji>ul>li:last-of-type {
-    border-right: 0px;
+#lunlie .sanlie .erji > ul > li:last-of-type {
+  border-right: 0px;
 }
-
-#lunlie .sanlie .erji>div {
-    width: 240px;
-    height: 130px;
+#lunlie .sanlie .erji > div {
+  width: 240px;
+  height: 130px;
 }
-
-#lunlie .sanlie .erji>div img {
-    width: 100%;
-    height: 100%;
+#lunlie .sanlie .erji > div img {
+  width: 100%;
+  height: 100%;
 }
-
 #lunlie .sanlie .erji .yizhang {
-    position: absolute;
-    top: 20px;
-    right: 86px;
+  position: absolute;
+  top: 20px;
+  right: 86px;
 }
-
 #lunlie .sanlie .erji .erzhang {
-    position: absolute;
-    top: 160px;
-    right: 86px;
+  position: absolute;
+  top: 160px;
+  right: 86px;
 }
 
+#vip {
+  width: 100%;
+  height: 95px;
+}
+#vip .vip-v {
+  width: 1200px;
+  height: 95px;
+  margin: 0 auto;
+  background-color: wheat;
+}
+#vip ul {
+  width: 1200px;
+  height: 95px;
+  list-style: none;
+}
+#vip ul > li {
+  width: 100px;
+  height: 95px;
+  float: left;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+#vip ul > li > img {
+  width: 30px;
+  height: 30px;
+  line-height: 95px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+#vip ul > li > img > span {
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;
+}
+#vip ul li:hover {
+  color: red;
+  transition: 0.3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.list {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.list ul {
+  width: 1200px;
+  margin: 0 auto;
+  list-style: none;
+}
+.list ul li {
+  width: 200px;
+  height: 310px;
+  padding: 10px;
+  margin: 0 20px 20px 0;
+  position: relative;
+  float: left;
+}
+.list ul p {
+  width: 200px;
+  height: 48px;
+  line-height: 24px;
+  overflow: hidden;
+}
+.list ul img {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+.list ul span {
+  display: block;
+}
+.list ul li:hover {
+  color: red;
+  transition: 0.3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#right {
+  width: 50px;
+  height: 46 0px;
+  position: fixed;
+  background: white;
+  right: 16px;
+  top: 150px;
+  padding: 10px 0;
+  border-radius: 2px;
+}
+#right ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  text-align: center;
+  padding-right: 5px;
+}
+#right ul li {
+  cursor: pointer;
+  border-bottom: 1px solid #efe;
+}
+#right ul li img {
+  width: 50px;
+  height: 60px;
+  margin-top: 15px;
+  font-size: 24px;
+  color: #bbb;
+}
+#right li:hover {
+  color: #e2231a;
+}
 
 /*# sourceMappingURL=index.css.map */
