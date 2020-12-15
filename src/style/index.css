@@ -305,41 +305,117 @@ html {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.list {
-  width: 1200px;
-  margin: 0 auto;
-  font-size: 14px;
+#tp {
+  width: 100%;
 }
-.list ul {
+#tp .tp-hu {
   width: 1200px;
+  height: 35px;
   margin: 0 auto;
-  list-style: none;
+  margin-bottom: 16px;
 }
-.list ul li {
-  width: 200px;
-  height: 310px;
-  padding: 10px;
-  margin: 0 20px 20px 0;
-  position: relative;
+#tp .tp-hu .tp-h {
+  width: 180px;
+  height: 35px;
   float: left;
 }
-.list ul p {
-  width: 200px;
-  height: 48px;
-  line-height: 24px;
-  overflow: hidden;
+#tp .tp-hu .tp-u {
+  width: 340px;
+  height: 35px;
+  float: right;
+  background: brown;
+  position: relative;
 }
-.list ul img {
-  width: 200px;
-  height: 200px;
+#tp .tp-hu .tp-u > ul {
+  width: 290px;
+  height: 15px;
+  list-style: none;
+  background: blue;
+  position: absolute;
+  bottom: 0;
+}
+#tp .tp-hu .tp-u > ul > li {
+  float: left;
+  font-size: 12px;
+  line-height: 15px;
+  margin-right: 16px;
+}
+#tp .tp-hu .jt {
+  width: 50px;
+  height: 18px;
+  float: right;
+}
+#tp .tp-hu .jt > span {
+  width: 28px;
+  height: 20px;
+}
+#tp .tp-hu .jt > img {
+  width: 18px;
+  height: 18px;
+}
+#tp .tu {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+#tp .tu .tu-l {
+  width: 230px;
+  height: 254px;
+}
+#tp .tu .bx {
+  width: 960px;
+  height: 254px;
+}
+#tp .tu .bx > ul {
+  width: 960px;
+  list-style: none;
+  position: absolute;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#tp .tu .bx > ul > li {
+  width: 230px;
+  height: 265px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+#tp .tu .bx > ul .tupian {
+  width: 230px;
+  height: 170px;
+}
+#tp .tu .bx > ul .tupian > img {
+  width: 230px;
+  height: 170px;
+}
+#tp .tu .bx > ul .zi {
+  width: 230px;
+  height: 68px;
+}
+#tp .tu .bx > ul .zi > h4 {
+  width: 230px;
+  height: 19px;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 5px;
+}
+#tp .tu .bx > ul .zi > span {
+  width: 230px;
+  height: 14px;
+  font-size: 12px;
+  display: inline-block;
+  text-align: center;
+}
+#tp .tu .bx > ul .zi > em {
+  width: 230px;
+  height: 21px;
   display: block;
+  text-align: center;
+  font-size: 20px;
 }
-.list ul span {
-  display: block;
-}
-.list ul li:hover {
-  color: red;
-  transition: 0.3;
+#tp .tu .bx > ul > li:hover {
+  transition: 0.3s;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 

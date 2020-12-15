@@ -4,10 +4,142 @@
     list-style: none;
 }
 
+#top {
+    width: 100%;
+    background-color: blue;
+}
+
+#top .top_img1 img {
+    width: 50px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#top .top_one {
+    width: 1200px;
+    height: 48px;
+    margin: 0 auto;
+    position: relative;
+    background-color: orange;
+}
+
+#top .top_ul {
+    width: 824px;
+    height: 48px;
+}
+
+#top .top_ul .topul_li {
+    height: 48px;
+    margin-right: 22px;
+    font-size: 15px;
+    float: left;
+    list-style: none;
+    line-height: 48px;
+}
+
+#top .top_zd {
+    width: 110px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#top .top_zd .topzd_ul {
+    width: 60px;
+    float: left;
+    background-color: saddlebrown;
+}
+
+#top .top_zd .topzd_ul_li {
+    width: 30px;
+    height: 48px;
+    float: left;
+    font-size: 12px;
+    list-style: none;
+    color: orchid;
+    line-height: 48px;
+}
+
+#top .top_zd img {
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+#top_secendlie {
+    width: 100%;
+    height: 72px;
+    background-color: #cccccc;
+}
+
+#top_secendlie .top_lie {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    background-color: saddlebrown;
+}
+
+#top_secendlie .top_lie .top_lie_ul {
+    width: 824px;
+    height: 48px;
+    background-color: salmon;
+}
+
+#top_secendlie .top_lie .top_lie_ul .toplie_ul_li {
+    height: 72px;
+    float: left;
+    font-size: 17px;
+    list-style: none;
+    margin-right: 45px;
+    line-height: 72px;
+}
+
+#top_secendlie .top_sousuo {
+    margin-top: 20px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#top_secendlie .top_sousuo form {
+    outline: none;
+}
+
+#top_secendlie .top_sousuo input {
+    width: 240px;
+    height: 30px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    border: 1px solid black;
+    outline: none;
+}
+
+
+/* 排序 */
+
+#px {
+    width: 100%;
+    background-color: black;
+}
+
+.pai {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 渲染 */
+
 .list {
-    width: 1160px;
+    width: 1200px;
     margin: 0 auto;
     font-size: 14px;
+    background-color: chartreuse;
 }
 
 .list li {
@@ -36,3 +168,45 @@
 .list li span {
     display: block;
 }
+
+
+/* 最右边盒子 */
+
+#right {
+    width: 50px;
+    height: 46 0px;
+    position: fixed;
+    background: white;
+    right: 16px;
+    top: 150px;
+    padding: 10px 0;
+    border-radius: 2px;
+}
+
+#right ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    text-align: center;
+    padding-right: 5px;
+}
+
+#right ul li {
+    cursor: pointer;
+    border-bottom: 1px solid #efe;
+    /* color: black; */
+}
+
+#right ul li img {
+    width: 50px;
+    height: 60px;
+    margin-top: 15px;
+    font-size: 24px;
+    /* color: #bbb; */
+    /* color: black; */
+}
+
+
+/* #right li:hover {
+    color: black;
+} */

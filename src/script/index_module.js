@@ -1,17 +1,17 @@
 // 顶部悬浮
-const $box = $('.top_lie');
-$(window).on('scroll', () => {
-    let $scrolltop = $(window).scrollTop(); //获取滚动条top值
-    if ($scrolltop >= 100) {
-        $box.stop(true).animate({
-            top: 80
-        })
-    } else {
-        $box.stop(true).animate({
-            top: 0
-        })
-    }
-});
+// const $box = $('.top_lie');
+// $(window).on('scroll', () => {
+//     let $scrolltop = $(window).scrollTop(); //获取滚动条top值
+//     if ($scrolltop >= 100) {
+//         $box.stop(true).animate({
+//             top: 80
+//         })
+//     } else {
+//         $box.stop(true).animate({
+//             top: 0
+//         })
+//     }
+// });
 
 
 // 轮播图

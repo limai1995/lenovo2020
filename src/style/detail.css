@@ -250,6 +250,7 @@
     width: 56px;
     height: 56px;
     padding-right: 6px;
+    list-style: none;
 }
 
 #list li img {
@@ -610,7 +611,7 @@
     line-height: 38px;
 }
 
-#main .main-r .gouwuche .jiaru {
+#main .main-r .gouwuche .box {
     background: #FFEDED;
     color: red;
     float: left;
@@ -621,7 +622,7 @@
     line-height: 38px;
 }
 
-#main .main-r .gouwuche .jiaru a {
+#main .main-r .gouwuche .box a {
     color: red;
     text-decoration: none;
 }

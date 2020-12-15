@@ -3,7 +3,7 @@ include "conn.php";//引入数据库连接代码。
 $result = $conn->query("select * from taobaogoods"); //获取数据的结果集(记录集)
 $num = $result->num_rows; //记录集的总条数
 
-
+// http://10.31.161.37/lenovo/php/listdata.php
 $pagesize = 10; //单个页面展示的数据条数
 
 $pagenum = ceil($num / $pagesize); //获取页数，一定选择向上取整。 3页
