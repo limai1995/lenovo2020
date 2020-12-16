@@ -13,6 +13,28 @@
 //     }
 // });
 
+// ! function($) {
+//     //1.滚轮事件控制左侧楼梯的显示和隐藏
+//     //直接刷新，满足情况
+//     function scroll() {
+//         let top = $(window).scrollTop(); //滚动条的top值。
+//         top >= 500 ? $('#right').show() : $('#right').hide();
+//         $('.louceng').each(function(index, element) {
+//             let loucengtop = $(this).offset().top; //每一个楼层的top值
+//             if (loucengtop >= top) {
+//                 $('#right li').removeClass('active');
+//                 $('#right li').eq($(this).index()).addClass('active');
+//                 return false; //返回 'false' 将停止循环，有一个满足条件终止循环。
+//             }
+//         });
+//     }
+//     scroll();
+//     //滚轮事件触发
+//     $(window).on('scroll', function() {
+//         scroll();
+//     });
+// }(jQuery);
+
 
 // 轮播图
 
@@ -112,96 +134,3 @@
         // });
     });
 }(jQuery);
-
-// 模块化
-
-// define([], () => {
-//     return {
-//         init: function() {
-//             // //代码实现
-//             // //1.鼠标移入左侧的li元素，显示右侧的大盒子。
-//             // const $list = $('.menu li');
-//             // const $cartlist = $('.cartlist');
-//             // const $items = $('.item');
-//             // $list.hover(function() {
-//             //     $cartlist.show();
-//             //     $(this).addClass('active').siblings('li').removeClass('active');
-//             //     //切换内容发生改变，不同的li对应不同的内容块。
-//             //     $items.eq($(this).index()).show().siblings('.item').hide();
-
-//             //     //改变右侧的大盒子的位置
-//             //     let $scrolltop = $(window).scrollTop();
-//             //     let $bannertop = $('.banner').offset().top;
-//             //     if ($scrolltop > $bannertop) {
-//             //         $cartlist.css({
-//             //             top: $scrolltop - $bannertop
-//             //         });
-//             //     } else {
-//             //         $cartlist.css({
-//             //             top: 0
-//             //         });
-//             //     }
-//             // }, function() {
-//             //     $cartlist.hide();
-//             // });
-
-//             // //2.鼠标移入右侧的大盒子，大盒子依然显示隐藏
-//             // $cartlist.hover(function() {
-//             //     $(this).show();
-//             // }, function() {
-//             //     $(this).hide();
-//             // });
-
-
-//             // //检测是否用户已经登录
-//             // if (localStorage.getItem('loginname')) {
-//             //     $('.admin').show();
-//             //     $('.login').hide();
-//             //     $('.admin span').html(localStorage.getItem('loginname'));
-//             // }
-
-//             // //退出登录 - 删除本地存储
-//             // $('.admin a').on('click', function() {
-//             //     $('.admin').hide();
-//             //     $('.login').show();
-//             //     localStorage.removeItem('loginname');
-//             // });
-
-
-
-//             // return {
-//             //     init: function() {
-//             //渲染+懒加载
-//             const $list = $('.list ul');
-//             $.ajax({
-//                 url: 'http://localhost/lenovo/php/listdata.php',
-//                 dataType: 'json'
-//             }).done(function(data) {
-//                 let $strhtml = '';
-//                 $.each(data, function(index, value) {
-//                     $strhtml += `
-//                                 <li>
-//                                     <a href="detail.html?sid=${value.sid}">
-//                                         <img class="lazy" data-original="${value.url}" width="200" height="200"/>
-//                                         <p>${value.title}</p>
-//                                         <span>￥${value.price}</span>
-//                                     </a>
-//                                 </li>
-//                             `;
-//                 });
-//                 $list.html($strhtml);
-//                 //渲染的下面进行懒加载操作
-//                 $(function() { //页面加载完成
-//                     $("img.lazy").lazyload({
-//                         effect: "fadeIn" //显示方法：谈入
-//                     });
-//                 });
-//             });
-//             //     }
-//             // }
-
-//         }
-
-
-//     }
-// });

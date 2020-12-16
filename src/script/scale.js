@@ -7,7 +7,7 @@
         this.bf = document.querySelector('#bf');
         this.bpic = document.querySelector('#bpic');
         this.left = document.querySelector('#left');
-        this.right = document.querySelector('#right');
+        this.right = document.querySelector('#gt');
         this.ul = document.querySelector('#list ul');
         this.lis = document.querySelectorAll('#list li');
     }

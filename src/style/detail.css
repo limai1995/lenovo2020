@@ -3,6 +3,9 @@
     padding: 0px;
 }
 
+
+/* http://10.31.161.37/lenovo/php/detail.php */
+
 #top {
     width: 100%;
     background-color: blue;
@@ -448,14 +451,12 @@
     position: absolute;
     left: 54px;
     margin-left: 30px;
-    /* background: url("https://p3.lefile.cn/product/adminweb/2019/05/06/e655fdc5-86aa-4b71-81bd-a03e5bab0be4.png") no-repeat 2px 3px; */
     background-size: 100%;
     overflow: hidden;
     z-index: 1;
 }
 
 #main .main-r .fenqi .huabei:hover {
-    /* background: url("https://p3.lefile.cn/product/adminweb/2019/05/06/e655fdc5-86aa-4b71-81bd-a03e5bab0be4.png") no-repeat 2px 3px; */
     background-color: white;
     background-size: 100%;
     height: 215px;
@@ -507,13 +508,11 @@
     left: 315px;
     background: white;
     margin-left: 10px;
-    /* background: url("https://p3.lefile.cn/product/adminweb/2020/03/08/76da00ca-136c-4d8d-9fb7-86db374a85d9.png") no-repeat 2px 3px; */
     background-size: 100%;
     overflow: hidden;
 }
 
 #main .main-r .fenqi .baitiao:hover {
-    /* background: url("https://p3.lefile.cn/product/adminweb/2020/03/08/76da00ca-136c-4d8d-9fb7-86db374a85d9.png") no-repeat 2px 3px; */
     background-color: white;
     background-size: 100%;
     height: 215px;
@@ -591,13 +590,14 @@
 
 #main .main-r .gouwuche {
     width: 622px;
-    height: 38px;
+    height: 64px;
     margin: 15px 0 0px 20px;
 }
 
 #main .main-r .gouwuche div {
     cursor: pointer;
     user-select: none;
+    float: left;
 }
 
 #main .main-r .gouwuche .liji {
