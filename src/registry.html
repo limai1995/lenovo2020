@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>注册页面</title>
     <link rel="stylesheet" href="style/registry.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="registry_module"></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
             <img src="https://p3.lefile.cn/product/adminweb/2019/01/14/4879b596-0b39-4534-bcc8-a50693fe825e.jpg" alt="">
 
         </div>
-        <!-- <img src="https://p3.lefile.cn/product/adminweb/2019/01/14/4879b596-0b39-4534-bcc8-a50693fe825e.jpg" alt=""> -->
+
         <div class="top_one">
             <ul class="top_ul">
                 <li class="topul_li">联想首页</li>
@@ -39,17 +40,15 @@
         <div class="main">
             <p class="title">注册联想会员</p>
             <!-- 表单 -->
-            <form action="" id="register">
-                <input type="text" placeholder="输入手机号" id="phone">
-                <span class="phone" style="vertical-align: middle;"></span>
-                <input type="text" placeholder="短信验证码">
-                <span class="yanzhengma">获取验证码</span>
-                <input type="password" placeholder="密码由8-20位字母数字和符号组合" id="password">
-                <span class="password"></span>
-                <input type="password" placeholder="再次输入密码" id="checkpass">
-                <span class="checkpasstwo"></span>
+            <form action="http://10.31.161.37/lenovo/php/reg.php" method="post" id="form1">
+                <p><input type="text" placeholder="用户名" name="username"><span></span></p>
+
+                <p><input type="text" placeholder="输入手机号" name="tel"><span></span></p>
+
+                <p><input type="password" placeholder="密码由8-20位字母数字和符号组合" name="password"><span></span></p>
+
                 <p class="tishi"></p>
-                <input type="button" value="立即注册" class="sub" disabled>
+                <input type="submit" value="立即注册" class="sub" name="submit">
                 <!-- 条款 -->
                 <p class="clouse">注册账号即表示您同意并愿意遵守联想 <b>使用条款</b> 和 <b>隐私权政策</b></p>
 
@@ -65,38 +64,15 @@
             </form>
         </div>
     </div>
-    <!-- <div id="register">
-        <div class="main">
-            <p class="pt">注册联想会员</p>
-            <form action="">
-                <input type="text" placeholder="输入手机号" id="phone">
+    <!-- <input type="text" placeholder="输入手机号" id="phone">
                 <span class="phone" style="vertical-align: middle;"></span>
-                <input type="text" placeholder="短信验证码" id="code">
-                <span class="code">获取验证码</span>
+
                 <input type="password" placeholder="密码由8-20位字母数字和符号组合" id="password">
                 <span class="password"></span>
                 <input type="password" placeholder="再次输入密码" id="checkpass">
-                <span class="checkpass"></span>
-                <p class="ts"></p>
-                <input type="button" value="立即注册" class="zc">
-                <p class="clause">注册账号即表示您同意并愿意遵守联想<b>使用条款</b>和<b>隐私权政策</b></p>
-
-                <div class="footer">
-                    <p>
-                        已有帐号&nbsp;
-                        <span><b>点此登录</b></span>
-                    </p>
-                    <p>
-                        <span><b>企业会员注册</b></span>
-                    </p>
-                </div>
-            </form>
-        </div>
-    </div> -->
+                <span class="checkpasstwo"></span> -->
 
 
 </body>
 
 </html>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="script/registry.js"></script>

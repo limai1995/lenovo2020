@@ -366,7 +366,61 @@
     </div>
 
 
+    <div id="footer">
+        <div class="footer-c">
+            <ul>
+                <li>
+                    <p>购物指南</p>
+                    <p>购买流程</p>
+                    <p>服务商信息</p>
+                    <p>注册登录</p>
+                    <p>购买流程</p>
+                </li>
+                <li>
+                    <p>配送方式</p>
+                    <p>配送方式</p>
+                    <p>配送方式信息</p>
+                    <p>签收原则</p>
+                    <p>物流查询</p>
+                </li>
+                <li>
+                    <p>支付方式</p>
+                    <p>分期支付</p>
+                    <p>支付方式</p>
+                    <p>支付问题</p>
+                </li>
+                <li>
+                    <p>订单信息</p>
+                    <p>订单信息</p>
+                    <p>发票信息</p>
+                    <p>支付问题</p>
+                </li>
+                <li>
+                    <p>售后服务</p>
+                    <p>售后服务总则</p>
+                    <p>24小时在线客服</p>
+                    <p>联想服务入口</p>
+                    <p>热门解决方案</p>
+                    <p>Lenovo Quick Fix工具</p>
+                </li>
+                <li>
+                    <p>其他说明</p>
+                    <p>服务承诺</p>
+                    <p>账户安全</p>
+                    <p>手机产品购买须知</p>
+                    <p>环境信息</p>
+                </li>
+                <li>
+                    <div>
+                        <p>400-990-8888转4</p>
+                        <p>周一到周日 9:00-21:00</p>
 
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 
     <!-- 渲染 -->
@@ -414,3 +468,19 @@
 
 
 </html>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    const $header2 = $('#top_secendlie');
+    $(window).on('scroll', () => {
+        let $scrolltop = $(window).scrollTop(); //获取滚动条top值
+        if ($scrolltop >= 96) {
+            $header2.stop(true).animate({
+                top: 0
+            })
+        } else {
+            $header2.stop(true).animate({
+                top: 48
+            })
+        }
+    });
+</script>

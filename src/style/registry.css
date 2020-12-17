@@ -87,7 +87,7 @@
 /* 表单 */
 
 #register .main form {
-    width: 428px;
+    width: 600px;
 }
 
 #register .main form input {
@@ -111,23 +111,6 @@
     width: 60px;
     height: 30px;
     text-align: center;
-}
-
-
-/* 验证码 */
-
-#register .main form .yanzhengma {
-    font-size: 16px;
-    display: inline-block;
-    width: 112px;
-    height: 50px;
-    text-align: center;
-    color: skyblue;
-    border: 1px solid #ccc;
-    line-height: 55px;
-    background: #F7F7F7;
-    border-left: none;
-    cursor: pointer;
 }
 
 #register .main form .tishi {
@@ -174,7 +157,7 @@
     color: #8B758B;
 }
 
-#register .main form .footer p span {
+#register .main form .footer>p>span {
     font-size: 12px;
     color: black;
     cursor: pointer;

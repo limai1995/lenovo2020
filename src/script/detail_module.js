@@ -35,7 +35,7 @@ define(['jcookie'], () => {
 
             //3.放大镜效果
             const $spic = $('#spic');
-            const $bpic = $('#bpic');
+            // const $bpic = $('#bpic');
             // const $sf = $('#sf'); //小放
             // const $bf = $('#bf'); //大放
             const $left = $('#left'); //左箭头
@@ -43,51 +43,17 @@ define(['jcookie'], () => {
             const $list = $('#list'); //小图列表
             //$spic 小图   $bpic 大图  
 
-            // //小放/大放=小图/大图
+            //小放/大放=小图/大图
             // $sf.width($spic.width() * $bf.width() / $bpic.width());
             // $sf.height($spic.height() * $bf.height() / $bpic.height());
-            // let $bili = $bpic.width() / $spic.width(); //比例大于1 放大效果
-            // $spic.hover(function() {
-            //     $sf.css('visibility', 'visible');
-            //     $bf.css('visibility', 'visible');
-            //     $(this).on('mousemove', function(ev) {
-            //         let $leftvalue = ev.pageX - $('.goodsinfo').offset().left - $sf.width() / 2;
-            //         let $topvalue = ev.pageY - $('.goodsinfo').offset().top - $sf.height() / 2;
-            //         if ($leftvalue < 0) {
-            //             $leftvalue = 0;
-            //         } else if ($leftvalue >= $spic.width() - $sf.width()) {
-            //             $leftvalue = $spic.width() - $sf.width()
-            //         }
 
-            //         if ($topvalue < 0) {
-            //             $topvalue = 0;
-            //         } else if ($topvalue >= $spic.height() - $sf.height()) {
-            //             $topvalue = $spic.height() - $sf.height()
-            //         }
-
-            //         $sf.css({
-            //             left: $leftvalue,
-            //             top: $topvalue
-            //         });
-
-            //         $bpic.css({
-            //             left: -$leftvalue * $bili,
-            //             top: -$topvalue * $bili
-            //         });
-
-            //     });
-            // }, function() {
-            //     $sf.css('visibility', 'hidden');
-            //     $bf.css('visibility', 'hidden');
-            // });
 
             //小图切换 - 小图是渲染出来的，找不到li。
             $('#list').on('click', 'li', function() { //事件委托,ul元素没有高度不可见，委托#list
                 let imgurl = $(this).find('img').attr('src'); //获取当前图片的地址
                 $('#smallpic').attr('src', imgurl);
-                $('#bpic').attr('src', imgurl);
+                // $('#bpic').attr('src', imgurl);
             });
-
 
             //左右箭头事件
             let $num = 6; //列表显示的图片个数,重要的信息
@@ -127,18 +93,15 @@ define(['jcookie'], () => {
             let arrnum = []; //存储商品的数量
 
             //4.2核心是判断用户是第一次存储，多次存储。
-            //如果是第一次存储，创建商品的列表显示在购物车列表页面。
-            //如果是多次存储，购物车列表页面里面的商品数量累加。
-
-
-            //如何判断是第一次还是第二次
-            //通过获取cookie进行判断，每存储一个商品对应的商品编号存入cookie里面，cookie就会发生变化。如果cookie里面存在当前商品的编号，该商品不是第一次存储，直接数量累加。
 
             //提前预判cookie设置时的key值(cookiesid/cookienum)进行获取cookie
             function getcookietoarray() {
                 if ($.cookie('cookiesid') && $.cookie('cookienum')) {
                     arrsid = $.cookie('cookiesid').split(',');
                     arrnum = $.cookie('cookienum').split(',');
+                } else { //cookie不存在，清空数组。
+                    arrsid = [];
+                    arrnum = [];
                 }
             }
             //上面的函数获取cookie值，并且转换成数组，方便判断是否是第一次。

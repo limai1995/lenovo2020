@@ -1,39 +1,40 @@
-// 顶部悬浮
-// const $box = $('.top_lie');
-// $(window).on('scroll', () => {
-//     let $scrolltop = $(window).scrollTop(); //获取滚动条top值
-//     if ($scrolltop >= 100) {
-//         $box.stop(true).animate({
-//             top: 80
-//         })
-//     } else {
-//         $box.stop(true).animate({
-//             top: 0
-//         })
-//     }
-// });
+! function($) {
 
-// ! function($) {
-//     //1.滚轮事件控制左侧楼梯的显示和隐藏
-//     //直接刷新，满足情况
-//     function scroll() {
-//         let top = $(window).scrollTop(); //滚动条的top值。
-//         top >= 500 ? $('#right').show() : $('#right').hide();
-//         $('.louceng').each(function(index, element) {
-//             let loucengtop = $(this).offset().top; //每一个楼层的top值
-//             if (loucengtop >= top) {
-//                 $('#right li').removeClass('active');
-//                 $('#right li').eq($(this).index()).addClass('active');
-//                 return false; //返回 'false' 将停止循环，有一个满足条件终止循环。
-//             }
-//         });
-//     }
-//     scroll();
-//     //滚轮事件触发
-//     $(window).on('scroll', function() {
-//         scroll();
-//     });
-// }(jQuery);
+    var $loutinav = $('#loutinav'); //整个楼梯
+    var $louti = $('#loutinav li').not('.last'); //获取9个li，排除last
+    var $louceng = $('.louceng'); //9个楼层
+    //第一步：显示隐藏左侧的楼梯：触发滚轮，根据对应的scrollTop值确定是否显示左侧的楼梯。
+    //滚动条top>=400 显示左侧楼梯
+
+    //封装函数
+    function scroll() {
+        var $scrolltop = $(window).scrollTop(); //获取滚动条的top值
+        if ($scrolltop >= 400) {
+            $loutinav.show();
+        } else {
+            $loutinav.hide();
+        }
+        $('title').html($scrolltop);
+        // 第四步：通过触发滚动条，通过楼层将对应的楼梯添加激活的样式。
+        // 如果楼层的top值>滚动条的top值,给楼层对应的楼梯添加激活状态。
+        $louceng.each(function(index, element) {
+            var $loucengtop = $(element).offset().top; //每一个楼层的top值。
+            if ($loucengtop >= $scrolltop) {
+                //每次触发滚动条，滚动条的top值都会发生变化。
+                $louti.removeClass('active'); //移除前面所有的激活状态
+                $louti.eq(index).addClass('active'); //给满足条件的添加状态
+                return false; //终止循环
+            }
+        });
+
+    }
+    scroll();
+
+
+    $(window).on('scroll', function() {
+        scroll();
+    });
+}(jQuery);
 
 
 // 轮播图
@@ -106,31 +107,31 @@
 }(jQuery);
 
 // 图片渲染
-! function($) {
-    //渲染+懒加载
-    const $list = $('.list ul');
-    $.ajax({
-        url: 'http://localhost/lenovo/php/listdata.php',
-        dataType: 'json'
-    }).done(function(data) {
-        let $strhtml = '';
-        $.each(data, function(index, value) {
-            $strhtml += `
-                <li>
-                    <a href="detail.html?sid=${value.sid}">
-                        <img class="lazy" src="${value.url}" width="200" height="200"/>
-                        <p>${value.title}</p>
-                        <span>￥${value.price}</span>
-                    </a>
-                </li>
-            `;
-        });
-        $list.html($strhtml);
-        //渲染的下面进行懒加载操作
-        // $(function() { //页面加载完成
-        //     $("img.lazy").lazyload({
-        //         effect: "fadeIn" //显示方法：谈入
-        //     });
-        // });
-    });
-}(jQuery);
+// ! function($) {
+//     //渲染+懒加载
+//     const $list = $('.list ul');
+//     $.ajax({
+//         url: 'http://10.31.161.37/lenovo/php/listdata.php',
+//         dataType: 'json'
+//     }).done(function(data) {
+//         let $strhtml = '';
+//         $.each(data, function(index, value) {
+//             $strhtml += `
+//                 <li>
+//                     <a href="detail.html?sid=${value.sid}">
+//                         <img class="lazy" src="${value.url}" width="200" height="200"/>
+//                         <p>${value.title}</p>
+//                         <span>￥${value.price}</span>
+//                     </a>
+//                 </li>
+//             `;
+//         });
+//         $list.html($strhtml);
+//         //渲染的下面进行懒加载操作
+//         // $(function() { //页面加载完成
+//         //     $("img.lazy").lazyload({
+//         //         effect: "fadeIn" //显示方法：谈入
+//         //     });
+//         // });
+//     });
+// }(jQuery);

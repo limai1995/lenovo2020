@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/login.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="login_module"></script>
+
 </head>
 
 <body>
@@ -31,44 +33,22 @@
             </div>
         </div>
     </div>
-    <!-- 大图 -->
-    <!-- <div id="largin">
-        <div class="main">
-
-        </div>
-    </div> -->
 
 
-    <div id="login">
+    <div id="log">
         <div class="huiyuan">
             <h1>联想会员登录</h1>
-            <form action="">
-                <p>
-                    <input type="text" id="text" placeholder="手机号码" class="telphone">
-                    <span></span>
-                    <i></i>
-                </p>
-                <p>
-                    <input type="text" id="text" placeholder="密码" class="password">
-                    <span></span>
-                    <i></i>
-                </p>
+
+            <form action="" id="registry">
+
+                <input type="text" placeholder="手机号码" class="haoma" name='tel' id="tel"><span></span>
+                <br>
+                <input type="text" placeholder="密码" class="password" id="password"><span></span>
                 <br>
                 <input type="checkbox" class="mima"><span class="jz"> 记住密码</span>
                 <br>
-                <input type="button" value="登录" class="dengl">
+                <input type="button" value="登录" class="login" id="login">
             </form>
-
-
-            <!-- <form action="" id="registry">
-                <input type="text" placeholder="手机号码" class="haoma"><span></span>
-                <br>
-                <input type="text" placeholder="密码" class="password"><span></span>
-                <br>
-                <input type="checkbox" class="mima"><span class="jz"> 记住密码</span>
-                <br>
-                <input type="button" value="登录" class="dengl">
-            </form> -->
 
             <!-- 提示 -->
             <div class="ti">
@@ -85,9 +65,9 @@
                 <span></span>
             </div>
             <!-- 四大图标 -->
-            <div class="tubiao">
+            <!-- <div class="tubiao">
 
-            </div>
+            </div> -->
 
         </div>
 
@@ -95,5 +75,3 @@
 </body>
 
 </html>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="script/login.js"></script>
