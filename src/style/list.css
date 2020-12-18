@@ -170,6 +170,79 @@
 }
 
 
+/* 底部 */
+
+#footer {
+    width: 100%;
+    height: 300px;
+    background: orchid;
+    margin-top: 50px;
+}
+
+#footer .footer-c {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#footer .footer-c ul {
+    width: 1124px;
+    height: 160px;
+    padding: 70px 0 70px 76px;
+    list-style: none;
+}
+
+#footer .footer-c ul li {
+    width: 152px;
+    float: left;
+}
+
+#footer .footer-c ul li p {
+    cursor: pointer;
+}
+
+#footer .footer-c ul li>p {
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #757575;
+}
+
+#footer .footer-c ul li>P:first-child {
+    color: #424242;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+#footer .footer-c ul li div p:first-child {
+    color: red;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#footer .footer-c ul li div P:nth-child(2) {
+    font-size: 13px;
+    color: #757575;
+    margin-bottom: 6px;
+}
+
+#footer .footer-c ul li div p:last-child {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    color: #aaa;
+}
+
+#footer .footer-c ul li div p:last-child .icon-huiyuan4 {
+    font-size: 20px;
+}
+
+#footer .footer-c ul li div p:last-child:hover {
+    color: black;
+}
+
+
 /* 最右边盒子 */
 
 #right {

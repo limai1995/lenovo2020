@@ -933,3 +933,22 @@ i {
 .right-btn {
     right: 0;
 }
+
+#price-end {
+    width: 160px;
+    height: 38px;
+    background-color: red;
+}
+
+#price-end>a {
+    width: 160px;
+    grid-template: 38px;
+    line-height: 38px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid #d9d8d6;
+    float: right;
+    text-align: center;
+    color: #fff;
+    background: #e2231a;
+}
